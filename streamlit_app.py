@@ -3,6 +3,14 @@ import streamlit.components.v1 as components
 
 components.html(
     """
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soul Guard</title>
+</head>
+<body>
   <div class="LandingPage" style="width: 375px; height: 1271px; background: white; display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start;">
     <div class="HeroImage" style="width: 100%; height: 207px; padding: 160px 24px; background: #E8B931; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 32px;">
       <div class="TextContentTitle" style="display: flex; flex-direction: column; justify-content: flex-start; align-items: center; gap: 8px;">
@@ -37,6 +45,8 @@ components.html(
       </div>
     </div>
   </div>
+</body>
+</html>
     """,
     height=600,
 )
