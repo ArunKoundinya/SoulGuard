@@ -1,4 +1,4 @@
-from sentiment import hello
+from test import hello
 
 
 def test_hello():
