@@ -1,4 +1,4 @@
-from test import hello
+from main import hello
 
 
 def test_hello():
