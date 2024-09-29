@@ -4,14 +4,14 @@ install:
 
 
 test:
-		python -m pytest -vv test_sentiment.py
+		python -m pytest -vv test_main.py
 
 
 format:
 		black *.py
 
 lint:
-		pylint --disable=R,C sentiment.py
+		pylint --disable=R,C main.py
 
 
 all: install lint test format
