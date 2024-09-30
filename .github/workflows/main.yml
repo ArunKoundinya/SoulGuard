@@ -26,4 +26,9 @@ jobs:
       run: |
         make format
     
-    
+    - name: Render and Publish
+      uses: quarto-dev/quarto-actions/publish@v2
+      target: gh-pages
+      with:
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
