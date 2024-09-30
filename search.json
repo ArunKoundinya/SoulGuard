@@ -1,10 +1,10 @@
 [
   {
-    "objectID": "jupyternotebooks/Sample.html",
-    "href": "jupyternotebooks/Sample.html",
-    "title": "Index",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
     "section": "",
-    "text": "1+1\n\n2"
+    "text": "About this site"
   },
   {
     "objectID": "index.html",
@@ -12,12 +12,5 @@
     "title": "Index",
     "section": "",
     "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site"
   }
 ]
