@@ -36,6 +36,6 @@ jobs:
       uses: quarto-dev/quarto-actions/publish@v2
       with:
         target: gh-pages
-        path: ./Index
+        path: ./quarto_webpages
       env:
         GITHUB_TOKEN: ${{ secrets.SoulGuardPublish }}
