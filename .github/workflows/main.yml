@@ -6,7 +6,8 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-
+    permissions:
+      contents: write
     steps:
     - uses: actions/checkout@v2
     - name: Set up Python 3.8
@@ -25,6 +26,7 @@ jobs:
     - name: Format code
       run: |
         make format
+
         
     - name: Check out repository
       uses: actions/checkout@v4 
