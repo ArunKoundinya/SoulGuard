@@ -12,7 +12,7 @@ format:
 		black *.py
 
 lint:
-		pylint --disable=R,C main.py, WebApp/*.py
+		pylint --disable=R,C main.py WebApp/*.py
 
 
 all: install lint test format
