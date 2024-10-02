@@ -5,13 +5,14 @@ install:
 
 test:
 		python -m pytest -vv test_main.py
+		python -m pytest --nbval ./jupyternotebooks/*.ipynb
 
 
 format:
 		black *.py
 
 lint:
-		pylint --disable=R,C main.py
+		pylint --disable=R,C main.py, WebApp/*.py
 
 
 all: install lint test format
