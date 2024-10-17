@@ -3,3 +3,4 @@ pylint
 black==24.8.0
 ipython
 nbval
+pandas
