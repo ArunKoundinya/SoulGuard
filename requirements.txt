@@ -4,3 +4,9 @@ black==24.8.0
 ipython
 nbval
 pandas
+emoji
+nltk
+plotnine
+matplotlib
+wordcloud
+ipython
