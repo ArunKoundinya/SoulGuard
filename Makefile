@@ -1,10 +1,6 @@
 install:
 		pip install --upgrade pip &&\
 			pip install -r requirements.txt
-		python -m nltk.downloader wordnet
-		python -m nltk.downloader punkt
-		python -m nltk.downloader stopwords
-
 
 test:
 		python -m pytest -vv test_main.py
