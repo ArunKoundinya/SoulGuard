@@ -1,6 +1,6 @@
 import pandas as pd
 
-data = pd.read_csv("blob/master/data/SoulG_Update.csv", nrows=20)
+data = pd.read_csv("https://media.githubusercontent.com/media/ArunKoundinya/SoulGuard/refs/heads/master/data/SoulG_Update.csv", nrows=20)
 
 
 def test_cleaned_text():
