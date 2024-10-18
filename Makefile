@@ -3,8 +3,8 @@ install:
 			pip install -r requirements.txt
 
 test:
-		python -m pytest -vv test_main.py
-		python -m pytest --nbval ./jupyternotebooks/*.ipynb
+		python -m pytest -vv test_main.py jupyternotebooks/test_*.py
+		python -m pytest --nbval ./jupyternotebooks/tests_*.ipynb
 
 
 format:
