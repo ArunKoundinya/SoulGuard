@@ -6,7 +6,7 @@ test:
 		python -m pytest -vv test_main.py jupyternotebooks/test_*.py
 
 format:
-		black *.py
+		black *.py jupyternotebooks/*.py
 
 lint:
 		pylint --disable=R,C main.py WebApp/*.py
