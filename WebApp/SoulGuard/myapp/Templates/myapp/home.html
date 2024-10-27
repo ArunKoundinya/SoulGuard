@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoulGuard</title>
+    <link rel="stylesheet" href="{% static 'css/style2.css' %}">
+    <style>
+        body {
+            background-image: url("{% static 'images/background.jpg' %}");
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="welcome-message">Welcome to SoulGuard</h1>
+    </header>
+    <main>
+        <div class="split-container">
+            <div class="split-section left-section">
+                <a href="{% url 'for_you' %}" class="btn">For You</a>
+            </div>
+            <div class="split-section right-section">
+                <a href="{% url 'to_whom_you_care' %}" class="btn">To Whom You Care</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p class="footer-message">Thank you for visiting SoulGuard.</p>
+    </footer>
+</body>
+</html>

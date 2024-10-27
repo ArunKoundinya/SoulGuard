@@ -1,0 +1,178 @@
+/* Global Styles - Add Background Image */
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/background.jpg'); /* Use relative path to the images folder */
+    background-size: cover; /* Cover the entire page */
+    background-attachment: fixed; /* Fixed background for a parallax effect */
+    background-repeat: no-repeat;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+/* Welcome Message Styling */
+.welcome-message {
+    text-align: center;
+    font-size: 5em;
+    margin-top: 50px;
+    color:#D66157; /* White color for better contrast */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1.9); /* Text shadow for better readability */
+}
+
+/* Main container to split the page into two sections */
+.split-container {
+    display: flex;
+    height: 60vh;
+    width: 80%;
+    margin: 50px auto; /* Center the container horizontally */
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow for a 3D effect */
+}
+
+/* Styling for each section */
+.split-section {
+    flex: 1; /* Equal width for both sections */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Left Section Styling */
+.left-section {
+    background: rgba(149, 165, 124, 0.5); /* Semi-transparent black overlay */
+    background-blend-mode: multiply;
+    transition: background 0.2s, transform 0.2s ease;
+}
+
+/* Right Section Styling */
+.right-section {
+    background: rgba(180, 195, 202, 0.5); /* Semi-transparent golden overlay */
+    background-blend-mode: multiply;
+    transition: background 0.2s, transform 0.2s ease;
+}
+
+/* Button Container Styling */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 60px; /* Space between buttons */
+    margin-top: 160px; /* Space above the buttons */
+}
+
+
+/* Button Styling */
+.btn {
+    background: linear-gradient(to right, #43cea2, #185a9d); /* Gradient for button */
+    color: white;
+    text-decoration: none;
+    padding: 20px 40px;
+    font-size: 1.2em;
+    border-radius: 50px; /* Rounded button */
+    transition: background 0.2s, transform 0.2s ease;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Button shadow for a 3D effect */
+}
+
+.btn:hover {
+    background: linear-gradient(to right, #185a9d, #43cea2); /* Reverse gradient on hover */
+    transform: translateY(-5px); /* Lift button on hover */
+}
+
+/* Register Form Styling */
+.register-form {
+    margin: 0 auto; /* Center the form horizontally */
+    width: 60%; /* Adjust width as needed */
+    background: rgba(255, 255, 255, 0.8); /* Light background for better readability */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+/* Form Title Styling */
+.form-title {
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #D66157; /* Matching the color of the welcome message */
+}
+
+/* Styling for the Form Labels and Inputs */
+label {
+    color: #444; /* Update the font color for better visibility */
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Navigation Bar Styling */
+nav {
+    background-color: #333; /* Dark background for nav */
+    padding: 10px 0; /* Padding for the nav bar */
+    text-align: center; /* Center-align the navigation content */
+}
+
+nav ul {
+    list-style-type: none; /* Remove bullets from list */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+nav ul li {
+    display: inline; /* Display list items in a horizontal line */
+    margin-right: 15px; /* Add some space between list items */
+}
+
+nav a {
+    color: #fff; /* White color for text */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 1.2em; /* Increase font size */
+    padding: 8px 16px; /* Add padding around the links */
+    border-radius: 5px; /* Add rounded corners to the link */
+    transition: background-color 0.3s ease; /* Smooth transition effect */
+}
+
+nav a:hover {
+    background-color: #555; /* Change background color on hover */
+    color: #e8e444; /* Change text color on hover */
+}
+
+
+/* Styling for Footer Message */
+.footer-message {
+    text-align: center;
+    font-size: 2.2em; /* Larger font size */
+    margin: 50px 0; /* Space above and below for better separation */
+    color: #E8E444; /* White color to contrast with background */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+}
+
+/* Responsive design adjustments for smaller devices */
+@media (max-width: 768px) {
+    .split-container {
+        flex-direction: column; /* Stack sections vertically on smaller devices */
+        height: auto;
+        width: 90%;
+    }
+
+    .left-section,
+    .right-section {
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .btn {
+        width: 90%; /* Full width for buttons on mobile for easier tapping */
+        font-size: 1em;
+    }
+}

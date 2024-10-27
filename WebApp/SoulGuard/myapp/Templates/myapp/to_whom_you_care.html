@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoulGuard</title>
+    <link rel="stylesheet" href="{% static 'css/style2.css' %}">
+    <style>
+        body {
+            background-image: url("{% static 'images/background.jpg' %}");
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="welcome-message">Welcome to SoulGuard</h1>
+    </header>
+    <main class="main-container">
+        <div class="button-container">
+            <a href="{% url 'register' %}" class="btn">Register</a>
+            <a href="{% url 'login' %}" class="btn">Sign In</a>
+        </div>
+    </main>
+    <footer>
+        <p class="footer-message"></p>
+    </footer>
+</body>
+</html>
