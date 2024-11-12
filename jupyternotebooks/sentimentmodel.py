@@ -1,22 +1,7 @@
 import pandas as pd
-from textblob import TextBlob
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
-import re
-import nltk
-import string
-from nltk.tokenize import word_tokenize
-from nltk.corpus import stopwords
-from nltk.stem import WordNetLemmatizer
-import ssl
-ssl._create_default_https_context = ssl._create_unverified_context
-nltk.download('stopwords')
-nltk.download('punkt')
-nltk.download('wordnet')
-import nltk
-from nltk.sentiment.vader import SentimentIntensityAnalyzer
 from textblob import TextBlob
-import emoji  # Make sure to import the emoji module
-
+from nltk.tokenize import word_tokenize
 
 
 # custom worrywords
@@ -45,30 +30,6 @@ emoji_lexicon = {'😂': 0.7, '😔': -0.5, '😏': 0.2, '😝': 0.6, '😘': 0.
                  '😁': 0.6, '😊': 0.7, '♥': 0.9, '😠': -0.7, '🥵': -0.5, '💜': 0.9, '💙': 0.8, '😈': -0.3, '💃': 0.5, '😍': 1.0,
                  '💕': 0.9, '🤯': -0.2, '🥳': 0.9, '😻': 1.0, '😤': -0.4, '🤣': 0.8, '😥': -0.7, '😖': -0.7, '🙂': 0.4, '😞': -0.8,
                  '😓': -0.6, '😪': -0.6}
-
-
-
-def preprocess(text):
-    stop_words = set(stopwords.words('english')) - { 'not', 'no', 'couldn', "couldn't", "wouldn't", "shouldn't", "isn't",
-                                                "aren't", "wasn't", "weren't", "don't", "doesn't", "hadn't", "hasn't",
-                                                 "won't", "can't", "mightn't","needn't","nor","shouldn","should've","should",
-                                                 "weren","wouldn","mustn't","mustn","didn't","didn","doesn","did","does","hadn",
-                                                 "hasn","haven't","haven","needn","shan't"}
-    # Convert text to lowercase
-    text = text.lower()
-    # Remove punctuation
-    text = text.translate(str.maketrans('', '', string.punctuation))
-    # Tokenize text into words
-    words = word_tokenize(text)
-    # Remove stopwords
-    words = [word for word in words if word not in stop_words]
-    # Lemmatize words
-    lemmatizer = WordNetLemmatizer()
-    words = [lemmatizer.lemmatize(word) for word in words]
-    # Join the words back into a single string
-    text = ' '.join(words)
-    return text
-
 
 
 # Function for calculating score for custom words
@@ -118,7 +79,3 @@ def hybrid_sentiment_analysis_worry(text):
     scaled_score = (combined_score + 1) / 2
 
     return scaled_score
-
-if  __name__ == "__main__":
-    score = hybrid_sentiment_analysis_worry("I am Depressed")
-    print(score)
