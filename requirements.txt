@@ -10,3 +10,7 @@ plotnine
 matplotlib
 wordcloud
 ipython
+vaderSentiment
+emoji
+textblob
+tensorflow
