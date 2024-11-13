@@ -11,7 +11,6 @@ from nltk.stem import WordNetLemmatizer
 import tensorflow as tf
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 
-
 def preprocess(text):
     stop_words = set(stopwords.words('english')) - { 'not', 'no', 'couldn', "couldn't", "wouldn't", "shouldn't", "isn't",
                                                 "aren't", "wasn't", "weren't", "don't", "doesn't", "hadn't", "hasn't",
@@ -49,10 +48,10 @@ def format_examples(data1, vocab_dict, maxlen):
 
 
 def extractsuicidescore(text):
-    print("Input processed, running model...")
-    print(text)
-    model_bistm_pretrained = pickle.load(open("../data/suicide_detection_model.pkl", 'rb'))
-    vocab_dict = pickle.load(open('../data/vocab_dict.pkl', 'rb'))
+    #print("Input processed, running model...")
+    #print(text)
+    model_bistm_pretrained = pickle.load(open("data/suicide_detection_model.pkl", 'rb'))
+    vocab_dict = pickle.load(open('data/vocab_dict.pkl', 'rb'))
     
     cleanedtext = preprocess(text)
     
@@ -63,6 +62,6 @@ def extractsuicidescore(text):
     
     X_input = format_examples(df, vocab_dict, 100)
     
-    prediction = model_bistm_pretrained.predict(X_input).astype(float)
+    prediction = model_bistm_pretrained.predict(X_input,verbose=0).astype(float)
     
     return prediction.max()

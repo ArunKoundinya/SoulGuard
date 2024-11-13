@@ -5,7 +5,7 @@ from nltk.tokenize import word_tokenize
 
 
 # custom worrywords
-Worry= pd.read_csv("../data/worrywords-v1.csv")
+Worry= pd.read_csv("data/worrywords-v1.csv")
 Worry = Worry[Worry['Mean']>0]
 worrywords_dict = dict(zip(Worry['Term'],Worry['Mean']))
 

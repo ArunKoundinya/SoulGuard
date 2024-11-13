@@ -1,4 +1,5 @@
 import os
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 import sys
 import re
 import nltk
@@ -15,8 +16,8 @@ logging.getLogger('nltk').setLevel(logging.WARNING)
 sys.stdout = open(os.devnull, 'w')
 sys.stdout = sys.__stdout__
 from textblob import TextBlob
-import sentimentmodel
-import suicidemodel
+import jupyternotebooks.sentimentmodel
+import jupyternotebooks.suicidemodel
 
 def preprocess(text):
     stop_words = set(stopwords.words('english')) - { 'not', 'no', 'couldn', "couldn't", "wouldn't", "shouldn't", "isn't",
@@ -39,7 +40,17 @@ def preprocess(text):
     text = ' '.join(words)
     return text
 
-predict_sentiment = sentimentmodel.hybrid_sentiment_analysis_worry("I am depressed")
-print(predict_sentiment)
-suicide_score = suicidemodel.extractsuicidescore("I am depressed")
-print(suicide_score)
+def finalpredictions(text):
+    suicidescore = jupyternotebooks.suicidemodel.extractsuicidescore(text)
+    sentimentscore =  jupyternotebooks.sentimentmodel.hybrid_sentiment_analysis_worry(text)
+    
+    if suicidescore < 0.5:
+        if sentimentscore < 0.5:
+            return "One"
+        else:
+            return "two"
+    else:
+        if sentimentscore < 0.5:
+            return "Three"
+        else:
+            return "Four"
