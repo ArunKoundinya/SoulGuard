@@ -3,7 +3,7 @@ install:
 			pip install -r requirements.txt
 
 test:
-		python -m pytest -vv test_main.py jupyternotebooks/test_*.py
+		python -m pytest -vv jupyternotebooks/test_*.py
 
 format:
 		black *.py jupyternotebooks/*.py
