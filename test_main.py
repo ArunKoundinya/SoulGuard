@@ -1,5 +1,5 @@
-from main import hello
+import jupyternotebooks.mainpredictions
 
 
-def test_hello():
-    assert "hi" == hello()
+def test_score():
+    assert "Three" == jupyternotebooks.mainpredictions.finalpredictions("I am Depressed")
