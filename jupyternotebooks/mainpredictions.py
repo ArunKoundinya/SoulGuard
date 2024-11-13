@@ -14,6 +14,10 @@ import emoji  # Make sure to import the emoji module
 ssl._create_default_https_context = ssl._create_unverified_context
 logging.getLogger('nltk').setLevel(logging.WARNING)
 sys.stdout = open(os.devnull, 'w')
+nltk.download('punkt')
+nltk.download('punkt_tab')
+nltk.download('stopwords')
+nltk.download('wordnet')
 sys.stdout = sys.__stdout__
 from textblob import TextBlob
 import jupyternotebooks.sentimentmodel
