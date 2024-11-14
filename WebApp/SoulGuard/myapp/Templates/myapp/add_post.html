@@ -1,10 +1,43 @@
 {% extends 'myapp/base.html' %}
 
 {% block content %}
-<h2>Add a Post</h2>
-<form method="post" enctype="multipart/form-data">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Post</button>
-</form>
+<div class="container my-5">
+    <div class="row">
+        <!-- Post Section -->
+        <div class="col-md-6">
+            <div class="card shadow-lg mb-4">
+                <div class="card-header bg-primary text-white text-center">
+                    <h2>Add a New Post</h2>
+                </div>
+                <div class="card-body">
+                    <form method="post" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        <div class="form-group mb-4">
+                            {{ form.content }}
+                            <small class="form-text text-muted">Limit: 100 words</small>
+                        </div>
+                        <button type="submit" class="btn btn-success btn-block">Post</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Recommendations Section -->
+        <div class="col-md-6">
+            <div class="card shadow-lg">
+                <div class="card-header bg-primary text-white text-center">
+                    <h2>Recommendations</h2>
+                </div>
+                <div class="card-body">
+                    <p>Here are some recommendations based on your interests:</p>
+                    <ul class="list-group">
+                        <li class="list-group-item">Recommendation 1</li>
+                        <li class="list-group-item">Recommendation 2</li>
+                        <li class="list-group-item">Recommendation 3</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}

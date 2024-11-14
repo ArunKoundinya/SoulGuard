@@ -2,7 +2,6 @@ from django.db import models
 from django.contrib.auth.models import User
 
 class UserProfile(models.Model):
-    objects = None
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     additional_details = models.CharField(max_length=255)
 
@@ -23,3 +22,7 @@ class UserActivity(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     action = models.CharField(max_length=255)
     timestamp = models.DateTimeField(auto_now_add=True)
+
+class SignInRecord(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    sign_in_time = models.DateTimeField(auto_now_add=True)

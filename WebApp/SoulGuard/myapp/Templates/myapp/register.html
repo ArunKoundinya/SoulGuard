@@ -1,15 +1,24 @@
 {% extends 'myapp/base.html' %}
 
 {% block content %}
-    <header>
-        <h1 class="welcome-message">Welcome to SoulGuard</h1>
-    </header>
-    <div class="register-form">
-        <h2 class="form-title">Register</h2>
-        <form method="post">
-            {% csrf_token %}
-            {{ form.as_p }}
-            <button type="submit" class="btn">Submit</button>
-        </form>
-    </div>
+<header>
+    <h1 class="welcome-message">Welcome to SoulGuard</h1>
+</header>
+<div class="register-form">
+    <h2 class="form-title">Register</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+
+        <!-- Terms and Conditions Checkbox -->
+        <div class="terms-conditions">
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">
+                I have read and agree to the <a href="/terms-and-conditions" target="_blank">Terms and Conditions</a>.
+            </label>
+        </div>
+
+        <button type="submit" class="btn">Submit</button>
+    </form>
+</div>
 {% endblock %}

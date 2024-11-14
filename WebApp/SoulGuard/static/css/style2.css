@@ -1,178 +1,326 @@
-/* Global Styles - Add Background Image */
+/* Global Styles */
 body {
     margin: 0;
     padding: 0;
-    background-image: url('../images/background.jpg'); /* Use relative path to the images folder */
-    background-size: cover; /* Cover the entire page */
-    background-attachment: fixed; /* Fixed background for a parallax effect */
-    background-repeat: no-repeat;
     font-family: 'Arial', sans-serif;
     color: #333;
-}
-
-/* Welcome Message Styling */
-.welcome-message {
-    text-align: center;
-    font-size: 5em;
-    margin-top: 50px;
-    color:#D66157; /* White color for better contrast */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1.9); /* Text shadow for better readability */
-}
-
-/* Main container to split the page into two sections */
-.split-container {
-    display: flex;
-    height: 60vh;
-    width: 80%;
-    margin: 50px auto; /* Center the container horizontally */
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow for a 3D effect */
-}
-
-/* Styling for each section */
-.split-section {
-    flex: 1; /* Equal width for both sections */
+    background-color: #F3F3F3; /* Light background */
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    box-sizing: border-box;
-    transition: transform 0.3s ease-in-out;
+    min-height: 100vh;
 }
 
-/* Left Section Styling */
-.left-section {
-    background: rgba(149, 165, 124, 0.5); /* Semi-transparent black overlay */
-    background-blend-mode: multiply;
-    transition: background 0.2s, transform 0.2s ease;
+/* Header and Footer Styling */
+header, footer {
+    background-color: #0C4B33; /* Dark green background */
+    color: #44B78B; /* Light green text */
+    padding: 15px;
+    text-align: center;
 }
 
-/* Right Section Styling */
-.right-section {
-    background: rgba(180, 195, 202, 0.5); /* Semi-transparent golden overlay */
-    background-blend-mode: multiply;
-    transition: background 0.2s, transform 0.2s ease;
+.header-title {
+    color: #44B78B;
+    font-size: 2em; /* Ensure consistent header size */
+    font-weight: bold;
+    margin: 0;
 }
 
-/* Button Container Styling */
-.button-container {
-    display: flex;
-    justify-content: center;
-    gap: 60px; /* Space between buttons */
-    margin-top: 160px; /* Space above the buttons */
+footer {
+    text-align: center;
+    font-size: 0.9em;
+    margin-top: auto; /* Pushes the footer to the bottom */
 }
 
+footer p {
+    color: #44B78B;
+    margin: 0;
+}
+
+/* Main content area styling */
+.main-container {
+    background-color: white;
+    margin: 30px auto;
+    padding: 30px;
+    width: 80%;
+    max-width: 900px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1; /* Expands to fill space between header and footer */
+}
 
 /* Button Styling */
 .btn {
-    background: linear-gradient(to right, #43cea2, #185a9d); /* Gradient for button */
+    background-color: #44B78B;
     color: white;
     text-decoration: none;
-    padding: 20px 40px;
+    padding: 12px 24px;
     font-size: 1.2em;
-    border-radius: 50px; /* Rounded button */
-    transition: background 0.2s, transform 0.2s ease;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Button shadow for a 3D effect */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
 .btn:hover {
-    background: linear-gradient(to right, #185a9d, #43cea2); /* Reverse gradient on hover */
-    transform: translateY(-5px); /* Lift button on hover */
+    background-color: #0C4B33;
 }
 
-/* Register Form Styling */
-.register-form {
-    margin: 0 auto; /* Center the form horizontally */
-    width: 60%; /* Adjust width as needed */
-    background: rgba(255, 255, 255, 0.8); /* Light background for better readability */
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Shadow effect */
+/* Split Container for Buttons */
+.split-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0;
 }
 
-/* Form Title Styling */
-.form-title {
+.split-section {
     text-align: center;
-    font-size: 3em;
-    margin-bottom: 20px;
-    color: #D66157; /* Matching the color of the welcome message */
 }
 
-/* Styling for the Form Labels and Inputs */
-label {
-    color: #444; /* Update the font color for better visibility */
+/* Form Styling */
+.register-form, .login-form {
+    background-color: white;
+    padding: 30px;
+    width: 80%;
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.register-form h2, .login-form h2 {
+    text-align: center;
+    color: #0C4B33;
+}
+
+/* Messages Styling */
+.messages {
+    margin: 20px auto;
+    width: 80%;
+    max-width: 800px;
+}
+
+/* Image and Content Sections */
+.split-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0;
+}
+
+.split-section {
+    background-color: #F3F3F3;
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 45%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.section-image {
+    width: 100%;
+    height: auto;
+    border-bottom: 3px solid #0C4B33;
+}
+
+.section-content {
+    padding: 20px;
+}
+
+.section-content h2 {
+    color: #0C4B33;
+    font-size: 1.8em;
+    margin: 10px 0;
+}
+
+.section-content p {
+    color: #333;
+    font-size: 1em;
+    margin: 10px 0 20px;
+}
+
+.section-content .btn {
+    background-color: #44B78B;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.section-content .btn:hover {
+    background-color: #0C4B33;
+}
+
+/* Login Form Styling */
+.login-form {
+    background-color: #ffffff;
+    padding: 30px;
+    width: 100%;
+    max-width: 450px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.login-form:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.login-form h2 {
+    color: #0C4B33;
+    margin-bottom: 25px;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus {
+    border-color: #44B78B;
+    box-shadow: 0 0 5px rgba(68, 183, 139, 0.3);
+    outline: none;
+}
+
+.login-form .btn {
+    width: 100%;
+    padding: 14px;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: white;
+    background-color: #44B78B;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.login-form .btn:hover {
+    background-color: #0C4B33;
+    transform: scale(1.05);
+}
+
+/* Header logo positioning */
+.header-with-logo {
+    position: relative;
+    padding-center: 120px; /* Space to the right for the logo */
+}
+
+.header-logo {
+    position: absolute;
+    right: 120px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 80px; /* Adjust this to control the logo size */
+    width: auto; /* Maintain aspect ratio */
+}
+
+/* Custom styles for Add Post page */
+.card {
+    border-radius: 15px;
+}
+
+.card-header {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.form-group p {
+    font-size: 1.1rem;
+    color: #444;
+}
+
+button[type="submit"] {
+    font-size: 1.2rem;
     font-weight: bold;
 }
 
-input {
+/* Additional Terms and Conditions Styles */
+.terms-conditions {
+    margin: 15px 0;
+    font-size: 0.9em;
+    color: #333;
+}
+
+.terms-conditions input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.terms-conditions a {
+    color: #44B78B;
+    text-decoration: underline;
+}
+
+.terms-conditions a:hover {
+    color: #0C4B33;
+}
+
+/* Home Button Styling */
+a.home-button {
+    color: #44B78B;
+    text-decoration: none;
+}
+
+a.home-button:hover {
+    color: #0C4B33;
+}
+
+
+
+.card {
+    border-radius: 10px;
+}
+
+.card-header {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.form-group textarea {
     width: 100%;
     padding: 10px;
-    margin-bottom: 15px;
+    resize: vertical;
+}
+
+ul.list-group {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.list-group-item {
+    background-color: #f8f9fa;
+    padding: 10px;
+    margin: 5px 0;
     border-radius: 5px;
-    border: 1px solid #ccc;
-}
-
-/* Navigation Bar Styling */
-nav {
-    background-color: #333; /* Dark background for nav */
-    padding: 10px 0; /* Padding for the nav bar */
-    text-align: center; /* Center-align the navigation content */
-}
-
-nav ul {
-    list-style-type: none; /* Remove bullets from list */
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
-}
-
-nav ul li {
-    display: inline; /* Display list items in a horizontal line */
-    margin-right: 15px; /* Add some space between list items */
-}
-
-nav a {
-    color: #fff; /* White color for text */
-    text-decoration: none; /* Remove underline from links */
-    font-size: 1.2em; /* Increase font size */
-    padding: 8px 16px; /* Add padding around the links */
-    border-radius: 5px; /* Add rounded corners to the link */
-    transition: background-color 0.3s ease; /* Smooth transition effect */
-}
-
-nav a:hover {
-    background-color: #555; /* Change background color on hover */
-    color: #e8e444; /* Change text color on hover */
-}
-
-
-/* Styling for Footer Message */
-.footer-message {
-    text-align: center;
-    font-size: 2.2em; /* Larger font size */
-    margin: 50px 0; /* Space above and below for better separation */
-    color: #E8E444; /* White color to contrast with background */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
-}
-
-/* Responsive design adjustments for smaller devices */
-@media (max-width: 768px) {
-    .split-container {
-        flex-direction: column; /* Stack sections vertically on smaller devices */
-        height: auto;
-        width: 90%;
-    }
-
-    .left-section,
-    .right-section {
-        border-right: none;
-        border-bottom: 1px solid #ddd;
-    }
-
-    .btn {
-        width: 90%; /* Full width for buttons on mobile for easier tapping */
-        font-size: 1em;
-    }
+    border: 1px solid #ddd;
 }

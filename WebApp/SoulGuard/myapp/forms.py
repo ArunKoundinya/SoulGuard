@@ -1,21 +1,19 @@
 from django import forms
-from django.contrib.auth.forms import UserCreationForm
-from django.contrib.auth.forms import AuthenticationForm
+from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth.models import User
 from .models import UserProfile, Post, Survey
+from datetime import date
 
 class SignUpForm(UserCreationForm):
-    additional_details = forms.CharField(max_length=255, required=False)
+    birthdate = forms.DateField(
+        required=True,
+        widget=forms.DateInput(attrs={'type': 'date'}),
+        label="Birthdate"
+    )
 
     class Meta:
         model = User
-        fields = ('username', 'password1', 'password2')
-
-    def save(self, commit=True):
-        user = super().save(commit=False)
-        user.save()
-        user_profile = UserProfile.objects.create(user=user, additional_details=self.cleaned_data['additional_details'])
-        return user
+        fields = ('username', 'password1', 'password2', 'birthdate')
 
 class PostForm(forms.ModelForm):
     class Meta:
@@ -26,10 +24,6 @@ class SurveyForm(forms.ModelForm):
     class Meta:
         model = Survey
         fields = ['question1_response', 'question2_response']
-
-# forms.py
-
-
 
 class LoginForm(AuthenticationForm):
     username = forms.CharField(label='Username', max_length=100)

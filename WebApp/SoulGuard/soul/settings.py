@@ -79,7 +79,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'soulguard',  # Use the name of the database you created
         'USER': 'root',
-        'PASSWORD': 'Jyoti@123',
+        'PASSWORD': 'Mrunal@1999',
         'HOST': 'localhost',  # Or another host if your database isn't local
         'PORT': '3306',  # Default MySQL port
     }
@@ -124,6 +124,9 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
+
+LOGIN_URL = 'login' 
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
