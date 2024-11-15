@@ -13,7 +13,7 @@ from datetime import datetime
 import os
 import sys
 
-import jupyternotebooks.mainpredictions¸
+import jupyternotebooks.mainpredictions
 
 def register(request):
     if request.method == 'POST':
