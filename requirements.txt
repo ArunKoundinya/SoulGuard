@@ -14,3 +14,5 @@ vaderSentiment
 emoji
 textblob
 tensorflow
+django
+mysqlclient

@@ -1,3 +1,8 @@
+import sys
+import os
+# Add the path to the jupyternotebooks folder
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "..")))
+
 from django.shortcuts import render, redirect
 from .forms import SignUpForm, PostForm, SurveyForm, LoginForm
 from django.contrib import messages
@@ -5,6 +10,10 @@ from django.contrib.auth.models import User
 from .models import Recommendation, Survey, UserProfile, Post
 from django.contrib.auth.views import LoginView
 from datetime import datetime
+import os
+import sys
+
+import jupyternotebooks.mainpredictions¸
 
 def register(request):
     if request.method == 'POST':
@@ -42,8 +51,14 @@ def add_post(request):
             post = form.save(commit=False)
             post.user = request.user
             post.save()
+            post_text = post.content
+
+            recommendation = jupyternotebooks.mainpredictions.finalpredictions(post_text)
+            
             messages.success(request, 'Post added successfully')
-            return redirect('post_list')
+            
+            return render(request, 'myapp/recommendation.html',{'recommendation': recommendation})
+            #return redirect('post_list')
         else:
             messages.error(request, form.errors)
     else:

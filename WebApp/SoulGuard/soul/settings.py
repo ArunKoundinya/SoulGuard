@@ -75,13 +75,9 @@ WSGI_APPLICATION = 'soul.wsgi.application'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'soulguard',  # Use the name of the database you created
-        'USER': 'root',
-        'PASSWORD': 'Mrunal@1999',
-        'HOST': 'localhost',  # Or another host if your database isn't local
-        'PORT': '3306',  # Default MySQL port
+    "default": {
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": BASE_DIR / "db.sqlite3",
     }
 }
 
