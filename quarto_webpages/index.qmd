@@ -18,9 +18,9 @@ execute:
 
 ## Abstract
 
-The objective of this project is to develop an AI-powered application designed to analyze social media posts for signs of depression using advanced data analysis and ethical AI techniques. 
+The objective of this project is to develop an AI-powered application designed to analyze social media posts for signs of depression using advanced data analysis and ethical AI techniques.
 
-By detecting early indicators, the application will provide personalized interventions, including uplifting resources and mental health support suggestions, to users in need. 
+By detecting early indicators, the application will provide personalized interventions, including uplifting resources and mental health support suggestions, to users in need.
 
 The project emphasizes privacy, ethical considerations, and user-centric design to foster a compassionate platform that promotes mental well-being and suicide prevention.
 
@@ -34,6 +34,32 @@ This project utilizes anonymized social media datasets, enriched with metadata t
 
 Through this initiative, SoulGuard seeks to advance the conversation around ethical AI applications in mental health, promoting emotional well-being and empowering individuals with timely and personalized support resources.
 
+## Methodology 
+
+## Data Collection and Preprocessing  
+
+- Anonymized datasets of social media posts, enriched with metadata on user sentiment, demographics, and linguistic features, will be sourced.  
+- Preprocessing steps include tokenization, stopword removal, and sentiment tagging to prepare the text for analysis.  
+
+## Model Selection and Training  
+
+- Pre-trained natural language processing models (e.g., BERT, RoBERTa) will be fine-tuned for sentiment analysis and depression detection.  
+- Additional machine learning models will analyze trends and generate predictive risk assessments.  
+
+## Intervention Framework  
+
+- The platform will integrate personalized interventions, such as connecting users to mental health resources, generating uplifting content, or providing anonymous tips to their support network.  
+
+## Ethical Considerations  
+
+- Strict adherence to ethical AI practices will guide the project's development, ensuring data privacy and user consent.  
+
+## Evaluation and Validation  
+
+- Model performance will be validated through metrics such as accuracy, precision, recall, and F1-score.  
+- Feedback from mental health professionals will be incorporated to refine the intervention mechanisms.  
+
+By employing this methodology, SoulGuard aims to balance technological innovation with sensitivity to user needs, creating a solution that is both impactful and responsible.  
 
 This is a Quarto website.
 
