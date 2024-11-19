@@ -1,6 +1,39 @@
 ---
-title: "Index"
+title: "SoulGuard: A Data-Driven Approach to Preventing Depression-Induced Suicide Through Social Media Analysis"
+subtitle: "INFO 698 - Capstone Project"
+author:
+  - name: "SoulGuard - Arun, Anusha, Mrunal, Sachin, Tushar"
+    affiliations: 
+      - name: "College of Information Science, University of Arizona"
+description: "This project aims to develop an AI-driven platform that ethically analyzes social media posts to identify signs of depression and provides personalized interventions to prevent suicide."
+format:
+   html:
+    code-tools: true
+    code-overflow: wrap
+    embed-resources: true
+editor: visual
+execute:
+  warning: false
 ---
+
+## Abstract
+
+The objective of this project is to develop an AI-powered application designed to analyze social media posts for signs of depression using advanced data analysis and ethical AI techniques. 
+
+By detecting early indicators, the application will provide personalized interventions, including uplifting resources and mental health support suggestions, to users in need. 
+
+The project emphasizes privacy, ethical considerations, and user-centric design to foster a compassionate platform that promotes mental well-being and suicide prevention.
+
+## Introduction
+
+Mental health issues and depression are significant challenges in today's digital age, with social media platforms often serving as both a reflection of personal struggles and a space for self-expression. However, identifying early signs of depression can be difficult due to the vast and unstructured nature of online data. Suicide prevention requires timely intervention, and the gap between recognizing and addressing mental health risks continues to be a critical societal concern.
+
+To address this, SoulGuard leverages advanced artificial intelligence to analyze social media posts ethically, detecting early indications of depression while preserving user privacy. The project draws on psychological research, machine learning techniques, and natural language processing to provide meaningful insights and personalized interventions aimed at suicide prevention. By combining data-driven analysis with user-focused design, SoulGuard aspires to foster a supportive environment for individuals at risk.
+
+This project utilizes anonymized social media datasets, enriched with metadata that captures user demographics, sentiment trends, and linguistic patterns associated with mental health. It integrates models fine-tuned for sentiment analysis, topic modeling, and predictive risk assessment, ensuring precise and actionable outcomes.
+
+Through this initiative, SoulGuard seeks to advance the conversation around ethical AI applications in mental health, promoting emotional well-being and empowering individuals with timely and personalized support resources.
+
 
 This is a Quarto website.
 
