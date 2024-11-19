@@ -2,4 +2,18 @@
 title: "About"
 ---
 
-About this site
+## About SoulGuard
+
+The project **SoulGuard** was developed for **INFO 698 - Capstone Project** at the University of Arizona, under the guidance of **Dr. Greg Chism**. The team is composed of the following team members:
+
+### Team Members
+
+-   **Arun Koundinya Parasa**: 2nd Year Information Science with specialization in Machine Learning, MS Student.
+
+-   **Anusha Nagaraja**: 2nd Year Information Science with specialization in Machine Learning, MS Student.
+
+-   **Sachin Panduranga Patil**: 2nd Year Information Science with specialization in Machine Learning, MS Student.
+
+-   **Mrunal Jadhav**: 2nd Year Information Science with specialization in Machine Learning, MS Student.
+
+-   **Tushar Kant Singh**: 2nd Year Information Science with specialization in Machine Learning, MS Student.
