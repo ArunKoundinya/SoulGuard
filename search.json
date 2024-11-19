@@ -2,9 +2,23 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Index",
+    "title": "SoulGuard: A Data-Driven Approach to Preventing Depression-Induced Suicide Through Social Media Analysis",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "The objective of this project is to develop an AI-powered application designed to analyze social media posts for signs of depression using advanced data analysis and ethical AI techniques.\nBy detecting early indicators, the application will provide personalized interventions, including uplifting resources and mental health support suggestions, to users in need.\nThe project emphasizes privacy, ethical considerations, and user-centric design to foster a compassionate platform that promotes mental well-being and suicide prevention."
+  },
+  {
+    "objectID": "index.html#abstract",
+    "href": "index.html#abstract",
+    "title": "SoulGuard: A Data-Driven Approach to Preventing Depression-Induced Suicide Through Social Media Analysis",
+    "section": "",
+    "text": "The objective of this project is to develop an AI-powered application designed to analyze social media posts for signs of depression using advanced data analysis and ethical AI techniques.\nBy detecting early indicators, the application will provide personalized interventions, including uplifting resources and mental health support suggestions, to users in need.\nThe project emphasizes privacy, ethical considerations, and user-centric design to foster a compassionate platform that promotes mental well-being and suicide prevention."
+  },
+  {
+    "objectID": "index.html#introduction",
+    "href": "index.html#introduction",
+    "title": "SoulGuard: A Data-Driven Approach to Preventing Depression-Induced Suicide Through Social Media Analysis",
+    "section": "Introduction",
+    "text": "Introduction\nMental health issues and depression are significant challenges in today’s digital age, with social media platforms often serving as both a reflection of personal struggles and a space for self-expression. However, identifying early signs of depression can be difficult due to the vast and unstructured nature of online data. Suicide prevention requires timely intervention, and the gap between recognizing and addressing mental health risks continues to be a critical societal concern.\nTo address this, SoulGuard leverages advanced artificial intelligence to analyze social media posts ethically, detecting early indications of depression while preserving user privacy. The project draws on psychological research, machine learning techniques, and natural language processing to provide meaningful insights and personalized interventions aimed at suicide prevention. By combining data-driven analysis with user-focused design, SoulGuard aspires to foster a supportive environment for individuals at risk.\nThis project utilizes anonymized social media datasets, enriched with metadata that captures user demographics, sentiment trends, and linguistic patterns associated with mental health. It integrates models fine-tuned for sentiment analysis, topic modeling, and predictive risk assessment, ensuring precise and actionable outcomes.\nThrough this initiative, SoulGuard seeks to advance the conversation around ethical AI applications in mental health, promoting emotional well-being and empowering individuals with timely and personalized support resources.\nThis is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
   },
   {
     "objectID": "about.html",
