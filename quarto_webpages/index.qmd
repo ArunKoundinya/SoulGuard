@@ -16,43 +16,6 @@ execute:
   warning: false
 ---
 
-```{r}
-#| label: load-packages
-#| include: false
-#| warning: FALSE
-#| echo: FALSE
-
-# Load packages here
-pacman::p_load(dplyr,
-               ggplot2,
-               ggridges,
-               scales,
-               patchwork,
-               stringr,
-               tidyr,
-               kableExtra,
-               plotly,
-               maps,
-               ggrepel,
-               animation,
-               gganimate,
-               utiles,
-               RColorBrewer)
-```
-
-```{r}
-#| label: load-dataset
-#| message: false
-#| warning: FALSE
-#| echo: FALSE
-
-# Load in the datasets
-Suicide_Detection <- read.csv("C:/Users/diput/Documents/GitHub/SoulGuard/data/Suicide_Detection.csv", na.strings = "")
-SoulG_Cleaned_Data_SoulG <- read.csv("C:/Users/diput/Documents/GitHub/SoulGuard/data/SoulG_Update.csv")
-Worrying_Words <- read.csv("C:/Users/diput/Documents/GitHub/SoulGuard/data/worrywords-v1.csv")
-
-```
-
 ## Abstract
 
 The objective of this project is to develop an AI-powered application designed to analyze social media posts for signs of depression using advanced data analysis and ethical AI techniques.
@@ -71,103 +34,21 @@ This project utilizes anonymized social media datasets, enriched with metadata t
 
 Through this initiative, SoulGuard seeks to advance the conversation around ethical AI applications in mental health, promoting emotional well-being and empowering individuals with timely and personalized support resources.
 
-## Methodology
-
-## Data Collection and Preprocessing
-
--   We collected raw `Suicide_Detection` data from the internet, consisting of three columns: an unnamed column containing random numbers, a `text` column with post data from social media that includes unnecessary text and symbols, and a `class` column. This dataset required significant cleaning to prepare it for analysis.
-
-```{r}
-#| label: display-suicide-detection
-#| echo: false
-#| message: false
-#| warning: false
-
-# Load the Suicide_Detection dataset
-Suicide_Detection <- read.csv("C:/Users/diput/Documents/GitHub/SoulGuard/data/Suicide_Detection.csv", na.strings = "")
-
-# Display all columns, with the text column limited to 75 characters in a nice table
-library(dplyr)
-library(knitr)
-
-Suicide_Detection %>%
-  mutate(text = substr(text, 1, 75)) %>%  # Truncate the 'text' column to 75 characters
-  head(10) %>%  # Display first 10 rows
-  kable(col.names = c("Unnamed", "Text", "Class"), 
-        caption = "Sample of the Suicide Detection Dataset (Text Truncated to 75 Characters)")
-
-```
-
--   During the cleaning of the raw data, we removed unnecessary columns such as the unnamed column, cleaned the text column by removing characters and unnecessary strings, and added a new column to count the word length.
-
-```{r}
-#| label: display-top-10
-#| echo: false
-#| message: false
-#| warning: false
-
-library(dplyr)
-library(stringr)
-library(knitr)
-
-# Display the first 10 rows of selected columns with truncated text in a nice table
-SoulG_Cleaned_Data_SoulG %>%
-  mutate(
-    text = str_trunc(text, 75),  # Truncate 'text' column to 25 characters
-    cleaned_text = str_trunc(cleaned_text, 75)  # Truncate 'cleaned_text' column to 25 characters
-  ) %>%
-  select(cleaned_text, class, wordlength) %>%
-  head(10) %>%
-  kable(
-    col.names = c("Cleaned Text (Truncated)", "Class", "Word Length"),
-    caption = "Sample of SoulGuard Cleaned Data with Truncated Text Columns"
-  )
-
-```
-
--   The Worrying Words dataset has been successfully integrated into the model to enhance its ability to identify and analyze patterns indicative of depressive language.
-
-```{r}
-#| label: load-worrying-words
-#| echo: false
-#| message: false
-#| warning: false
-
-library(knitr)
-
-# Load the Worrying_Words dataset
-Worrying_Words <- read.csv("C:/Users/diput/Documents/GitHub/SoulGuard/data/worrywords-v1.csv")
-
-# Display the first few rows of the dataset in a nice table
-head(Worrying_Words, 10) %>%
-  kable(
-    col.names = c("Term", "Mean", "OrdinalClass", "MajorityLabel", "MajorityLabelRatio", "NumberAnnotations", "SetOfLabels"),  # Adjust column names if necessary
-    caption = "Sample of Worrying Words Dataset"
-  )
+## 1) What the problem
 
 
 
-```
 
-## Model Selection and Training
+## 2) Why this App
 
--   Pre-trained natural language processing models (e.g., BERT, RoBERTa) will be fine-tuned for sentiment analysis and depression detection.\
--   Additional machine learning models will analyze trends and generate predictive risk assessments.
 
-## Intervention Framework
 
--   The platform will integrate personalized interventions, such as connecting users to mental health resources, generating uplifting content, or providing anonymous tips to their support network.
 
-## Ethical Considerations
+## 3) How this App helps
 
--   Strict adherence to ethical AI practices will guide the project's development, ensuring data privacy and user consent.
 
-## Evaluation and Validation
 
--   Model performance will be validated through metrics such as accuracy, precision, recall, and F1-score.\
--   Feedback from mental health professionals will be incorporated to refine the intervention mechanisms.
 
-By employing this methodology, SoulGuard aims to balance technological innovation with sensitivity to user needs, creating a solution that is both impactful and responsible.
 
 This is a Quarto website.
 
