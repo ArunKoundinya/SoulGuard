@@ -324,3 +324,64 @@ ul.list-group {
     border-radius: 5px;
     border: 1px solid #ddd;
 }
+
+/* Styling for the Create a New Post Section */
+.post-section .card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.post-section .card-header {
+    font-size: 1.8em;
+    font-weight: bold;
+    background-color: #0C4B33;
+    color: #fff;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 15px;
+}
+
+.post-section .form-group {
+    margin-bottom: 20px;
+}
+
+.post-section .form-group label {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.post-section .form-group textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    resize: none;
+}
+
+.post-section .btn {
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #44B78B;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.post-section .btn:hover {
+    background-color: #0C4B33;
+    transform: scale(1.05);
+}
+
+

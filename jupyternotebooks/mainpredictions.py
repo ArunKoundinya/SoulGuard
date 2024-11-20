@@ -50,11 +50,11 @@ def finalpredictions(text):
     
     if suicidescore < 0.5:
         if sentimentscore < 0.5:
-            return "One"
+            return "Recommendation1.png"
         else:
-            return "two"
+            return "Recommendation2.png"
     else:
         if sentimentscore < 0.5:
-            return "Three"
+            return "Recommendation3.png"
         else:
-            return "Four"
+            return "Recommendation4.png"

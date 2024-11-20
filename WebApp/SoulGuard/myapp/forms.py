@@ -18,7 +18,18 @@ class SignUpForm(UserCreationForm):
 class PostForm(forms.ModelForm):
     class Meta:
         model = Post
-        fields = ['content']
+        fields = ['content']  # Ensure 'content' is included
+        widgets = {
+            'content': forms.Textarea(attrs={
+                'class': 'form-control',
+                'placeholder': 'Write your post here...',
+                'rows': 4,
+                'maxlength': 500,
+            }),
+        }
+        labels = {
+            'content': 'Your Post',
+        }
 
 class SurveyForm(forms.ModelForm):
     class Meta:

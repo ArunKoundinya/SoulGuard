@@ -15,4 +15,3 @@ emoji
 textblob
 tensorflow
 django
-mysqlclient

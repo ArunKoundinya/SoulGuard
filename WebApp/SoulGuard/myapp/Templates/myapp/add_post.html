@@ -1,43 +1,57 @@
 {% extends 'myapp/base.html' %}
+{% load static %}
 
 {% block content %}
-<div class="container my-5">
-    <div class="row">
-        <!-- Post Section -->
-        <div class="col-md-6">
-            <div class="card shadow-lg mb-4">
-                <div class="card-header bg-primary text-white text-center">
-                    <h2>Add a New Post</h2>
-                </div>
-                <div class="card-body">
-                    <form method="post" enctype="multipart/form-data">
-                        {% csrf_token %}
-                        <div class="form-group mb-4">
-                            {{ form.content }}
-                            <small class="form-text text-muted">Limit: 100 words</small>
-                        </div>
-                        <button type="submit" class="btn btn-success btn-block">Post</button>
-                    </form>
-                </div>
-            </div>
-        </div>
+<style>
+    body {
+        background-image: url("{% static 'images/post_background.jpg' %}");
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center;
+        color: white;
+    }
 
-        <!-- Recommendations Section -->
-        <div class="col-md-6">
-            <div class="card shadow-lg">
-                <div class="card-header bg-primary text-white text-center">
-                    <h2>Recommendations</h2>
+    .post-section {
+        padding: 20px;
+        margin-left: 20px; /* Keep shifting to the left */
+        margin-top: 20px; /* Add space from the top */
+        max-width: 800px;
+        width: 80%; /* Limit width to 80% of the container */
+    }
+
+    .card-header h2 {
+        color: white;
+    }
+
+    .btn-block {
+        background-color: #44B78B;
+        color: white;
+    }
+</style>
+
+<div class="post-section">
+    <div class="card">
+        <div class="card-header">
+            <h2>Create a New Post</h2>
+        </div>
+        <div class="card-body">
+            <form method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label for="postContent" class="form-label">Your Post</label>
+                    {{ form.content }}
+                    {% if form.content.errors %}
+                    <div class="alert alert-danger">
+                        {{ form.content.errors|join:" " }}
+                    </div>
+                    {% endif %}
+                    <p class="text-muted">Limit: 100 words</p>
                 </div>
-                <div class="card-body">
-                    <p>Here are some recommendations based on your interests:</p>
-                    <ul class="list-group">
-                        <li class="list-group-item">Recommendation 1</li>
-                        <li class="list-group-item">Recommendation 2</li>
-                        <li class="list-group-item">Recommendation 3</li>
-                    </ul>
-                </div>
-            </div>
+                <button type="submit" class="btn btn-success btn-block">Share Feelings</button>
+            </form>
         </div>
     </div>
 </div>
+
 {% endblock %}
