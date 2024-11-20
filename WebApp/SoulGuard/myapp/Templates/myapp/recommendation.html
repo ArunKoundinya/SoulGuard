@@ -1,2 +1,49 @@
-<h1>Recommendation</h1>
-<p>{{ recommendation }}</p>
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommendation</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column; /* Stack elements vertically */
+            align-items: center;
+            justify-content: center;
+            height: 100vh; /* Full height of the viewport */
+            background-color: #000; /* Optional: Black background for better focus on the image */
+        }
+        .home-link {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #fff;
+            color: #000;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            z-index: 1000;
+        }
+        .home-link:hover {
+            background-color: #ddd;
+            color: #333;
+        }
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain; /* Adjust to fit the image without distortion */
+        }
+    </style>
+</head>
+<body>
+    <!-- Link to Home Page -->
+    <a href="{% url 'home' %}" class="home-link">Home</a>
+
+    <!-- Recommendation Image -->
+    <img src="{% static 'images/' %}{{ recommendation }}" alt="Recommendation Image">
+</body>
+</html>

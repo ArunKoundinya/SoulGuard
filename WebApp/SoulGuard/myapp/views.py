@@ -54,9 +54,7 @@ def add_post(request):
             post_text = post.content
 
             recommendation = jupyternotebooks.mainpredictions.finalpredictions(post_text)
-            
-            messages.success(request, 'Post added successfully')
-            
+                        
             return render(request, 'myapp/recommendation.html',{'recommendation': recommendation})
             #return redirect('post_list')
         else:
