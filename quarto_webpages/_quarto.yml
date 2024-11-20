@@ -7,9 +7,12 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
-      - soulguard.qmd
-      - recommendation.qmd
+      - href: about.qmd
+        text: About
+      - href: soulguard.qmd
+        text: SoulGuard
+      - href: recommendation.qmd
+        text: OurRecommendations
       
 
 format:
