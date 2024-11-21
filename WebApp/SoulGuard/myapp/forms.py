@@ -31,10 +31,15 @@ class PostForm(forms.ModelForm):
             'content': 'Your Post',
         }
 
-class SurveyForm(forms.ModelForm):
-    class Meta:
-        model = Survey
-        fields = ['question1_response', 'question2_response']
+class SurveyForm(forms.Form):
+    QUESTION_CHOICES = [
+        ('yes', 'Yes'),
+        ('no', 'No')
+    ]
+    
+    # Define two questions with Yes/No options
+    question_1 = forms.ChoiceField(choices=QUESTION_CHOICES, widget=forms.RadioSelect, label="Are you very frustrated today?")
+    question_2 = forms.ChoiceField(choices=QUESTION_CHOICES, widget=forms.RadioSelect, label="Do you feel entire weight on your shoulders?")
 
 class LoginForm(AuthenticationForm):
     username = forms.CharField(label='Username', max_length=100)

@@ -54,8 +54,11 @@ def add_post(request):
             post_text = post.content
 
             recommendation = jupyternotebooks.mainpredictions.finalpredictions(post_text)
-                        
-            return render(request, 'myapp/recommendation.html',{'recommendation': recommendation})
+
+            if recommendation == "Recommendation3.png":
+                return redirect('add_survey')
+            else:             
+                return render(request, 'myapp/recommendation.html',{'recommendation': recommendation})
             #return redirect('post_list')
         else:
             messages.error(request, form.errors)
@@ -64,24 +67,24 @@ def add_post(request):
     return render(request, 'myapp/add_post.html', {'form': form})
 
 def add_survey(request):
-    if not request.user.is_authenticated:
-        messages.error(request, "You must be logged in to submit surveys.")
-        return redirect('login')
-
     if request.method == 'POST':
         form = SurveyForm(request.POST)
         if form.is_valid():
-            survey = form.save(commit=False)
-            survey.user = request.user
-            survey.save()
-            messages.success(request, 'Survey submitted successfully')
-            return redirect('survey_results')
-        else:
-            messages.error(request, form.errors)
+            # Process the survey data (you can save it to the database or perform other actions)
+            question_1_answer = form.cleaned_data['question_1']
+            question_2_answer = form.cleaned_data['question_2']
+            
+            # Check if both answers are "yes"
+            if question_1_answer == "yes" and question_2_answer == "yes":
+                recommendation = "Recommendation3.png"
+                return render(request, 'myapp/recommendation.html', {'recommendation': recommendation})
+            else:
+                recommendation = "Recommendation4.png"
+                return render(request, 'myapp/recommendation.html', {'recommendation': recommendation})
     else:
         form = SurveyForm()
-    return render(request, 'myapp/add_survey.html', {'form': form})
 
+    return render(request, 'myapp/add_survey.html', {'form': form})
 def post_list(request):
     posts = Post.objects.all()  # Fetch all posts from the database
     return render(request, 'myapp/post_list.html', {'posts': posts})
@@ -109,3 +112,6 @@ def to_whom_you_care(request):
 
 def terms_and_conditions(request):
     return render(request, 'myapp/terms_and_conditions.html')
+
+def recommendation(request):
+    return render(request, 'myapp/recommendation.html')
