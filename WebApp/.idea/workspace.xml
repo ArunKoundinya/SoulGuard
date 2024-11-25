@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb2e67e8-0569-4a26-b612-8efd4e81ee12" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/SoulGuard/myapp/Templates/myapp/to_whom_you_care.html" beforeDir="false" afterPath="$PROJECT_DIR$/SoulGuard/myapp/Templates/myapp/to_whom_you_care.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SoulGuard/soul/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/SoulGuard/soul/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SoulGuard/static/css/style2.css" beforeDir="false" afterPath="$PROJECT_DIR$/SoulGuard/static/css/style2.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SoulGuard/static/images/background.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../quarto_webpages/_site/search.json" beforeDir="false" afterPath="$PROJECT_DIR$/../quarto_webpages/_site/search.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../quarto_webpages/_site/soulguard.html" beforeDir="false" afterPath="$PROJECT_DIR$/../quarto_webpages/_site/soulguard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../quarto_webpages/solution.qmd" beforeDir="false" afterPath="$PROJECT_DIR$/../quarto_webpages/solution.qmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../quarto_webpages/soulguard.qmd" beforeDir="false" afterPath="$PROJECT_DIR$/../quarto_webpages/soulguard.qmd" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,9 +18,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2oS8POAM9QB2WEcst6uns0A2Bdl" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -30,7 +30,8 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/diput/Documents/GitHub/SoulGuard/WebApp"
+    "last_opened_file_path": "C:/Users/diput/Documents/GitHub/SoulGuard/WebApp",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
   <component name="SharedIndexes">
