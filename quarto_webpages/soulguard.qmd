@@ -36,3 +36,13 @@ To deliver accurate and insightful results, our backend leverages advanced machi
         ![](images/clipboard-3832348058.png)
 
         ![](images/clipboard-1641379668.png)
+
+    6.  **Suicide Model Update:** Boosting Accuracy with Hyperparameter Tuning and Regularization
+
+        The Suicide Model was updated through hyperparameter tuning to optimize performance, using the best parameters identified to enhance model accuracy by 1.5%. L2 regularization was applied to mitigate overfitting, ensuring the model generalized well to new data while maintaining improved accuracy.
+
+        ![](images/clipboard-21891035.png)
+
+        ![](images/clipboard-2626867677.png)
+
+        ![](images/clipboard-2036658578.png)
