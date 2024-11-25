@@ -2,7 +2,7 @@
 title: "How the App is Built"
 ---
 
-## 1. Front End Overview
+## 1. Front-End Overview
 
 ## 2. Backend Models Overview
 
