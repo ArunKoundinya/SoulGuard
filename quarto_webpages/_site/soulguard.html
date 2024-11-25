@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Soul Guard - SoulGuard</title>
+<title>Soul Guard - How the App is Built</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -120,14 +120,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#how-is-the-app-built" id="toc-how-is-the-app-built" class="nav-link active" data-scroll-target="#how-is-the-app-built">How is the App Built?</a>
-  <ul class="collapse">
-  <li><a href="#front-end" id="toc-front-end" class="nav-link" data-scroll-target="#front-end">1. Front End</a></li>
-  <li><a href="#back-end-models" id="toc-back-end-models" class="nav-link" data-scroll-target="#back-end-models">2. Back End Models</a>
-  <ul class="collapse">
-  <li><a href="#how-to-use-the-backend" id="toc-how-to-use-the-backend" class="nav-link" data-scroll-target="#how-to-use-the-backend">How to Use the Backend</a></li>
-  </ul></li>
-  </ul></li>
+  <li><a href="#front-end-overview" id="toc-front-end-overview" class="nav-link active" data-scroll-target="#front-end-overview">1. Front End Overview</a></li>
+  <li><a href="#backend-models-overview" id="toc-backend-models-overview" class="nav-link" data-scroll-target="#backend-models-overview">2. Backend Models Overview</a></li>
   </ul>
 </nav>
     </div>
@@ -136,7 +130,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">SoulGuard</h1>
+<h1 class="title">How the App is Built</h1>
 </div>
 
 
@@ -153,21 +147,36 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="how-is-the-app-built" class="level1">
-<h1>How is the App Built?</h1>
-<section id="front-end" class="level2">
-<h2 class="anchored" data-anchor-id="front-end">1. Front End</h2>
+<section id="front-end-overview" class="level2">
+<h2 class="anchored" data-anchor-id="front-end-overview">1. Front End Overview</h2>
 </section>
-<section id="back-end-models" class="level2">
-<h2 class="anchored" data-anchor-id="back-end-models">2. Back End Models</h2>
-<section id="how-to-use-the-backend" class="level3">
-<h3 class="anchored" data-anchor-id="how-to-use-the-backend">How to Use the Backend</h3>
-<p>This is a Quarto website.</p>
-<p>To learn more about Quarto websites visit <a href="https://quarto.org/docs/websites" class="uri">https://quarto.org/docs/websites</a>.</p>
+<section id="backend-models-overview" class="level2">
+<h2 class="anchored" data-anchor-id="backend-models-overview">2. Backend Models Overview</h2>
+<p>To deliver accurate and insightful results, our backend leverages advanced machine learning models and natural language processing techniques. The workflow includes:</p>
+<ol type="1">
+<li><p><strong>Data Cleaning</strong> to ensure robust preprocessing of raw text data.</p>
+<p><img src="images/clipboard-2879810987.png" class="img-fluid"></p>
+<p><img src="images/clipboard-2404938390.png" class="img-fluid"></p></li>
+<li><p><strong>Word Cloud</strong> visualization to highlight key themes from the dataset.</p>
+<p><img src="images/clipboard-3771990736.png" class="img-fluid"></p>
+<ol start="3" type="1">
+<li><strong>Topic Analysis</strong> using Latent Dirichlet Allocation (LDA) to extract hidden topics.</li>
+</ol>
+<!-- -->
+<ol type="1">
+<li><img src="images/clipboard-1477693439.png" class="img-fluid"></li>
+</ol>
+<p><img src="images/clipboard-778513236.png" class="img-fluid"></p>
+<ol start="4" type="1">
+<li><p><strong>BiLSTM Model Comparisons</strong> to evaluate deep learning performance in text classification tasks.</p>
+<p><img src="images/clipboard-1629743760.png" class="img-fluid"></p></li>
+<li><p><strong>LiME Comparisons</strong> to interpret and validate model predictions on sample sentences, enhancing trust and explainability.</p>
+<p><img src="images/clipboard-3832348058.png" class="img-fluid"></p>
+<p><img src="images/clipboard-1641379668.png" class="img-fluid"></p></li>
+</ol></li>
+</ol>
 
 
-</section>
-</section>
 </section>
 
 </main> <!-- /main -->

@@ -1,15 +1,38 @@
 ---
-title: "SoulGuard"
+title: "How the App is Built"
 ---
 
-# How is the App Built?
+## 1. Front End Overview
 
-## 1. Front End
+## 2. Backend Models Overview
 
-## 2. Back End Models
+To deliver accurate and insightful results, our backend leverages advanced machine learning models and natural language processing techniques. The workflow includes:
 
-### How to Use the Backend
+1.  **Data Cleaning** to ensure robust preprocessing of raw text data.
 
-This is a Quarto website.
+    ![](images/clipboard-2879810987.png)
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+    ![](images/clipboard-2404938390.png)
+
+2.  **Word Cloud** visualization to highlight key themes from the dataset.
+
+    ![](images/clipboard-3771990736.png)
+
+    3.  **Topic Analysis** using Latent Dirichlet Allocation (LDA) to extract hidden topics.
+
+    ```{=html}
+    <!-- -->
+    ```
+    1.  ![](images/clipboard-1477693439.png)
+
+    ![](images/clipboard-778513236.png)
+
+    4.  **BiLSTM Model Comparisons** to evaluate deep learning performance in text classification tasks.
+
+        ![](images/clipboard-1629743760.png)
+
+    5.  **LiME Comparisons** to interpret and validate model predictions on sample sentences, enhancing trust and explainability.
+
+        ![](images/clipboard-3832348058.png)
+
+        ![](images/clipboard-1641379668.png)
