@@ -1,0 +1,142 @@
+[
+  {
+    "objectID": "soulguard.html",
+    "href": "soulguard.html",
+    "title": "SoulGuard",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+  },
+  {
+    "objectID": "soulguard.html#back-end-models",
+    "href": "soulguard.html#back-end-models",
+    "title": "SoulGuard",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+  },
+  {
+    "objectID": "solution.html",
+    "href": "solution.html",
+    "title": "Solution",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "SoulGuard: A Data-Driven Approach to Preventing Depression-Induced Suicide Through Social Media Analysis",
+    "section": "",
+    "text": "The objective of this project is to develop an AI-powered application designed to analyze social media posts for signs of depression using advanced data analysis and ethical AI techniques.\nBy detecting early indicators, the application will provide personalized interventions, including uplifting resources and mental health support suggestions, to users in need.\nThe project emphasizes privacy, ethical considerations, and user-centric design to foster a compassionate platform that promotes mental well-being and suicide prevention."
+  },
+  {
+    "objectID": "index.html#abstract",
+    "href": "index.html#abstract",
+    "title": "SoulGuard: A Data-Driven Approach to Preventing Depression-Induced Suicide Through Social Media Analysis",
+    "section": "",
+    "text": "The objective of this project is to develop an AI-powered application designed to analyze social media posts for signs of depression using advanced data analysis and ethical AI techniques.\nBy detecting early indicators, the application will provide personalized interventions, including uplifting resources and mental health support suggestions, to users in need.\nThe project emphasizes privacy, ethical considerations, and user-centric design to foster a compassionate platform that promotes mental well-being and suicide prevention."
+  },
+  {
+    "objectID": "index.html#introduction",
+    "href": "index.html#introduction",
+    "title": "SoulGuard: A Data-Driven Approach to Preventing Depression-Induced Suicide Through Social Media Analysis",
+    "section": "Introduction",
+    "text": "Introduction\nMental health issues and depression are significant challenges in today’s digital age, with social media platforms often serving as both a reflection of personal struggles and a space for self-expression. However, identifying early signs of depression can be difficult due to the vast and unstructured nature of online data. Suicide prevention requires timely intervention, and the gap between recognizing and addressing mental health risks continues to be a critical societal concern.\nTo address this, SoulGuard leverages advanced artificial intelligence to analyze social media posts ethically, detecting early indications of depression while preserving user privacy. The project draws on psychological research, machine learning techniques, and natural language processing to provide meaningful insights and personalized interventions aimed at suicide prevention. By combining data-driven analysis with user-focused design, SoulGuard aspires to foster a supportive environment for individuals at risk.\nThis project utilizes anonymized social media datasets, enriched with metadata that captures user demographics, sentiment trends, and linguistic patterns associated with mental health. It integrates models fine-tuned for sentiment analysis, topic modeling, and predictive risk assessment, ensuring precise and actionable outcomes.\nThrough this initiative, SoulGuard seeks to advance the conversation around ethical AI applications in mental health, promoting emotional well-being and empowering individuals with timely and personalized support resources."
+  },
+  {
+    "objectID": "index.html#understanding-the-problem",
+    "href": "index.html#understanding-the-problem",
+    "title": "SoulGuard: A Data-Driven Approach to Preventing Depression-Induced Suicide Through Social Media Analysis",
+    "section": "Understanding the Problem",
+    "text": "Understanding the Problem\nMental health challenges, particularly depression and suicidal tendencies, are becoming a critical crisis, especially among youth. While many mental health solutions exist, most fail to provide real-time, personalized interventions that effectively address users’ emotional states. There is a pressing need for a solution that proactively identifies and addresses depressive symptoms before they escalate into severe mental health crises."
+  },
+  {
+    "objectID": "index.html#why-choose-soul-guard",
+    "href": "index.html#why-choose-soul-guard",
+    "title": "SoulGuard: A Data-Driven Approach to Preventing Depression-Induced Suicide Through Social Media Analysis",
+    "section": "Why Choose Soul Guard?",
+    "text": "Why Choose Soul Guard?\nSoul Guard is a unique app designed to bridge the gaps in existing mental health solutions by offering dual-user functionality, personalization, and real-time analysis. Unlike traditional tools, it differentiates between general depressive symptoms and those signaling a risk of suicide. It leverages advanced AI and deep learning to analyze social media activity, providing users with actionable insights. Its dual approach caters to both personal well-being and the support of loved ones, making it a versatile and impactful tool."
+  },
+  {
+    "objectID": "index.html#how-soul-guard-makes-a-difference",
+    "href": "index.html#how-soul-guard-makes-a-difference",
+    "title": "SoulGuard: A Data-Driven Approach to Preventing Depression-Induced Suicide Through Social Media Analysis",
+    "section": "How Soul Guard Makes a Difference",
+    "text": "How Soul Guard Makes a Difference\nSoul Guard helps by delivering tailored recommendations based on emotional states through an easy-to-use platform. Key features include emotional well-being tracking, insightful content such as videos, and direct helpline access. The app’s core components—Platform Development using Django and an Analytical Engine powered by deep learning—enable accurate and efficient analysis of social media data to detect depressive patterns. By empowering users to act promptly, it aims to prevent potential mental health crises and promote emotional resilience."
+  },
+  {
+    "objectID": "index.html#what-is-the-problem",
+    "href": "index.html#what-is-the-problem",
+    "title": "SoulGuard: A Data-Driven Approach to Preventing Depression-Induced Suicide Through Social Media Analysis",
+    "section": "1. What is the Problem?",
+    "text": "1. What is the Problem?\nMental health struggles, particularly among young people, are a growing crisis. Traditional mental health solutions often lack the real-time, personalized interventions necessary to effectively address users’ emotional states."
+  },
+  {
+    "objectID": "index.html#why-this-app",
+    "href": "index.html#why-this-app",
+    "title": "SoulGuard: A Data-Driven Approach to Preventing Depression-Induced Suicide Through Social Media Analysis",
+    "section": "2. Why This App?",
+    "text": "2. Why This App?\nSoul Guard is designed to be a proactive lifeline for individuals and those who care about them. It fills a critical gap in the mental health landscape by offering:\n\nReal-time insights: Leveraging AI and social media analysis to provide immediate feedback.\nPersonalized recommendations: Tailoring interventions to specific emotional states.\nProactive support: Identifying potential risks early on, particularly those related to depression and suicide."
+  },
+  {
+    "objectID": "index.html#how-does-this-app-help",
+    "href": "index.html#how-does-this-app-help",
+    "title": "SoulGuard: A Data-Driven Approach to Preventing Depression-Induced Suicide Through Social Media Analysis",
+    "section": "3. How Does This App Help?",
+    "text": "3. How Does This App Help?\nSoul Guard empowers users to take control of their mental health by:\n\nMonitoring emotional well-being: Tracking changes in mood and behavior.\nProviding actionable insights: Offering personalized tips and strategies.\nConnecting with support: Facilitating access to helplines and professional help.\nSupporting loved ones: Providing tools to understand and assist others.\n\nThis is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+  },
+  {
+    "objectID": "recommendation.html",
+    "href": "recommendation.html",
+    "title": "SoulGuard: A Data-Driven Approach to Preventing Depression-Induced Suicide Through Social Media Analysis",
+    "section": "",
+    "text": "The objective of this project is to develop an AI-powered application designed to analyze social media posts for signs of depression using advanced data analysis and ethical AI techniques.\nBy detecting early indicators, the application will provide personalized interventions, including uplifting resources and mental health support suggestions, to users in need.\nThe project emphasizes privacy, ethical considerations, and user-centric design to foster a compassionate platform that promotes mental well-being and suicide prevention."
+  },
+  {
+    "objectID": "recommendation.html#abstract",
+    "href": "recommendation.html#abstract",
+    "title": "SoulGuard: A Data-Driven Approach to Preventing Depression-Induced Suicide Through Social Media Analysis",
+    "section": "",
+    "text": "The objective of this project is to develop an AI-powered application designed to analyze social media posts for signs of depression using advanced data analysis and ethical AI techniques.\nBy detecting early indicators, the application will provide personalized interventions, including uplifting resources and mental health support suggestions, to users in need.\nThe project emphasizes privacy, ethical considerations, and user-centric design to foster a compassionate platform that promotes mental well-being and suicide prevention."
+  },
+  {
+    "objectID": "recommendation.html#introduction",
+    "href": "recommendation.html#introduction",
+    "title": "SoulGuard: A Data-Driven Approach to Preventing Depression-Induced Suicide Through Social Media Analysis",
+    "section": "Introduction",
+    "text": "Introduction\nMental health issues and depression are significant challenges in today’s digital age, with social media platforms often serving as both a reflection of personal struggles and a space for self-expression. However, identifying early signs of depression can be difficult due to the vast and unstructured nature of online data. Suicide prevention requires timely intervention, and the gap between recognizing and addressing mental health risks continues to be a critical societal concern.\nTo address this, SoulGuard leverages advanced artificial intelligence to analyze social media posts ethically, detecting early indications of depression while preserving user privacy. The project draws on psychological research, machine learning techniques, and natural language processing to provide meaningful insights and personalized interventions aimed at suicide prevention. By combining data-driven analysis with user-focused design, SoulGuard aspires to foster a supportive environment for individuals at risk.\nThis project utilizes anonymized social media datasets, enriched with metadata that captures user demographics, sentiment trends, and linguistic patterns associated with mental health. It integrates models fine-tuned for sentiment analysis, topic modeling, and predictive risk assessment, ensuring precise and actionable outcomes.\nThrough this initiative, SoulGuard seeks to advance the conversation around ethical AI applications in mental health, promoting emotional well-being and empowering individuals with timely and personalized support resources."
+  },
+  {
+    "objectID": "recommendation.html#what-the-problem",
+    "href": "recommendation.html#what-the-problem",
+    "title": "SoulGuard: A Data-Driven Approach to Preventing Depression-Induced Suicide Through Social Media Analysis",
+    "section": "1) What the problem",
+    "text": "1) What the problem"
+  },
+  {
+    "objectID": "recommendation.html#why-this-app",
+    "href": "recommendation.html#why-this-app",
+    "title": "SoulGuard: A Data-Driven Approach to Preventing Depression-Induced Suicide Through Social Media Analysis",
+    "section": "2) Why this App",
+    "text": "2) Why this App"
+  },
+  {
+    "objectID": "recommendation.html#how-this-app-helps",
+    "href": "recommendation.html#how-this-app-helps",
+    "title": "SoulGuard: A Data-Driven Approach to Preventing Depression-Induced Suicide Through Social Media Analysis",
+    "section": "3) How this App helps",
+    "text": "3) How this App helps\nThis is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "The project SoulGuard was developed for INFO 698 - Capstone Project at the University of Arizona, under the guidance of Dr. Greg Chism. The team is composed of the following team members:\n\n\n\nArun Koundinya Parasa: 2nd Year Information Science with specialization in Machine Learning, MS Student.\nAnusha Nagaraja: 2nd Year Information Science with specialization in Machine Learning, MS Student.\nSachin Panduranga Patil: 2nd Year Information Science with specialization in Machine Learning, MS Student.\nMrunal Jadhav: 2nd Year Information Science with specialization in Machine Learning, MS Student.\nTushar Kant Singh: 2nd Year Information Science with specialization in Machine Learning, MS Student."
+  },
+  {
+    "objectID": "about.html#about-soulguard",
+    "href": "about.html#about-soulguard",
+    "title": "About",
+    "section": "",
+    "text": "The project SoulGuard was developed for INFO 698 - Capstone Project at the University of Arizona, under the guidance of Dr. Greg Chism. The team is composed of the following team members:\n\n\n\nArun Koundinya Parasa: 2nd Year Information Science with specialization in Machine Learning, MS Student.\nAnusha Nagaraja: 2nd Year Information Science with specialization in Machine Learning, MS Student.\nSachin Panduranga Patil: 2nd Year Information Science with specialization in Machine Learning, MS Student.\nMrunal Jadhav: 2nd Year Information Science with specialization in Machine Learning, MS Student.\nTushar Kant Singh: 2nd Year Information Science with specialization in Machine Learning, MS Student."
+  }
+]
