@@ -121,7 +121,7 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#front-end-overview" id="toc-front-end-overview" class="nav-link active" data-scroll-target="#front-end-overview">1. Front-End Overview</a></li>
-  <li><a href="#backend-models-overview" id="toc-backend-models-overview" class="nav-link" data-scroll-target="#backend-models-overview">2. Backend Models Overview</a></li>
+  <li><a href="#back-end-models-overview" id="toc-back-end-models-overview" class="nav-link" data-scroll-target="#back-end-models-overview">2. Back-End Models Overview</a></li>
   </ul>
 </nav>
     </div>
@@ -149,9 +149,54 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="front-end-overview" class="level2">
 <h2 class="anchored" data-anchor-id="front-end-overview">1. Front-End Overview</h2>
+<p>The <em>SoulGuard Django Project</em> front-end is designed to support mental health by creating a positive and user-friendly interface. Inspired by the <em>988</em> website, it features a professional layout with carefully selected header and footer formatting. Colors were chosen using a <em>color contrast analyzer</em> to meet accessibility standards (4:1 ratio), fostering a comforting visual experience.</p>
+<p>The landing page is divided into two sections: <em>For You</em>, focusing on personal well-being, and <em>To Whom You Care</em>, supporting loved ones. Custom visuals and a logo were crafted using Canva and sourced from Pixabay, ensuring an uplifting and professional design. Privacy and security are integral, with <em>Terms and Conditions</em>, age restrictions (18+), and user authentication required to access features like posting. This front-end design combines aesthetics and functionality to create a safe and engaging user experience.</p>
+<p>Sharing below the templates used inside the app:</p>
+<ul>
+<li><p><strong>Home Page:</strong></p>
+<p>This is the landing page where users are first directed, featuring two main sections: <em>For You</em> (focused on personal well-being) and <em>To Whom You Care</em> (offering support for loved ones).</p></li>
+</ul>
+<p><img src="images/clipboard-3033144047.png" class="img-fluid"></p>
+<ul>
+<li><p><strong>Sign In Page:</strong></p>
+<p>When a new user clicks on “Explore,” they will be directed to the Sign-In page.</p>
+<p><img src="images/clipboard-193719618.png" class="img-fluid"></p></li>
+<li><p><strong>Registration Page:</strong></p>
+<p>If the user is new, they can select the “Register” option, which will take them to the registration page to create a username and password.</p></li>
+</ul>
+<p><img src="images/clipboard-3923187621.png" class="img-fluid"></p>
+<ul>
+<li><p><strong>Create New Post Page:</strong></p>
+<p>Once you click on explore button either for you or to whom you care it will take you to share feelings page.</p></li>
+</ul>
+<p><img src="images/clipboard-369148278.png" class="img-fluid"></p>
+<ul>
+<li><p><strong>Happy Stage:</strong></p>
+<p>When a post is shared, and the model predicts the stage as <em>Happy</em>, it reflects positive sentiment and emotional well-being in the user’s content.</p></li>
+</ul>
+<p><img src="images/clipboard-410706734.png" class="img-fluid"></p>
+<ul>
+<li><p><strong>Depressed Stage:</strong></p>
+<p>If the model predicts a post as <em>Depressed</em>, the user is directed to a dedicated page with a survey form. Based on the survey responses, personalized content and resources are provided to support their mental well-being.</p></li>
+</ul>
+<p><img src="images/clipboard-2651965137.png" class="img-fluid"></p>
+<p><img src="images/clipboard-3499152409.png" class="img-fluid"></p>
+<p><img src="images/clipboard-2822837191.png" class="img-fluid"></p>
+<ul>
+<li><p><strong>Uncertainty Stage:</strong></p>
+<p>If the model predicts a post as <em>Confused</em> or <em>Seeking Clarity</em>, the user is provided with personalized content encouraging mindfulness practices, physical activity, prioritizing rest, balanced nutrition, joining the SoulGuard community, exploring new adventures, and finding healing through nature, all aimed at promoting emotional well-being and support.</p></li>
+</ul>
+<p><img src="images/clipboard-1057036328.png" class="img-fluid"></p>
+<p><img src="images/clipboard-1776398611.png" class="img-fluid"></p>
+<ul>
+<li><p><strong>At Risk Stage:</strong></p>
+<p>If the model predicts a post as <em>Suicidal</em> or <em>At Risk</em>, the user is provided with tailored content, including helpline numbers, professional assistance contacts, blogs for guidance, trusted doctor details, and an option to call the <em>988</em> helpline. Additionally, the platform connects the user with <em>SoulGuard Support</em> for immediate help and resources.</p></li>
+</ul>
+<p><img src="images/clipboard-2587993409.png" class="img-fluid"></p>
+<p><img src="images/clipboard-1044320660.png" class="img-fluid"></p>
 </section>
-<section id="backend-models-overview" class="level2">
-<h2 class="anchored" data-anchor-id="backend-models-overview">2. Backend Models Overview</h2>
+<section id="back-end-models-overview" class="level2">
+<h2 class="anchored" data-anchor-id="back-end-models-overview">2. Back-End Models Overview</h2>
 <p>To deliver accurate and insightful results, our backend leverages advanced machine learning models and natural language processing techniques. The workflow includes:</p>
 <ol type="1">
 <li><p><strong>Data Cleaning</strong> to ensure robust preprocessing of raw text data.</p>
