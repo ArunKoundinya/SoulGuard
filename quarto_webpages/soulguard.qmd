@@ -4,7 +4,69 @@ title: "How the App is Built"
 
 ## 1. Front-End Overview
 
-## 2. Backend Models Overview
+The *SoulGuard Django Project* front-end is designed to support mental health by creating a positive and user-friendly interface. Inspired by the *988* website, it features a professional layout with carefully selected header and footer formatting. Colors were chosen using a *color contrast analyzer* to meet accessibility standards (4:1 ratio), fostering a comforting visual experience.
+
+The landing page is divided into two sections: *For You*, focusing on personal well-being, and *To Whom You Care*, supporting loved ones. Custom visuals and a logo were crafted using Canva and sourced from Pixabay, ensuring an uplifting and professional design. Privacy and security are integral, with *Terms and Conditions*, age restrictions (18+), and user authentication required to access features like posting. This front-end design combines aesthetics and functionality to create a safe and engaging user experience.
+
+Sharing below the templates used inside the app:
+
+-   **Home Page:**
+
+    This is the landing page where users are first directed, featuring two main sections: *For You* (focused on personal well-being) and *To Whom You Care* (offering support for loved ones).
+
+![](images/clipboard-3033144047.png)
+
+-   **Sign In Page:**
+
+    When a new user clicks on "Explore," they will be directed to the Sign-In page.
+
+    ![](images/clipboard-193719618.png)
+
+-   **Registration Page:**
+
+    If the user is new, they can select the "Register" option, which will take them to the registration page to create a username and password.
+
+![](images/clipboard-3923187621.png)
+
+-   **Create New Post Page:**
+
+    Once you click on explore button either for you or to whom you care it will take you to share feelings page.
+
+![](images/clipboard-369148278.png)
+
+-   **Happy Stage:**
+
+    When a post is shared, and the model predicts the stage as *Happy*, it reflects positive sentiment and emotional well-being in the user's content.
+
+![](images/clipboard-410706734.png)
+
+-   **Depressed Stage:**
+
+    If the model predicts a post as *Depressed*, the user is directed to a dedicated page with a survey form. Based on the survey responses, personalized content and resources are provided to support their mental well-being.
+
+![](images/clipboard-2651965137.png)
+
+![](images/clipboard-3499152409.png)
+
+![](images/clipboard-2822837191.png)
+
+-   **Uncertainty Stage:**
+
+    If the model predicts a post as *Confused* or *Seeking Clarity*, the user is provided with personalized content encouraging mindfulness practices, physical activity, prioritizing rest, balanced nutrition, joining the SoulGuard community, exploring new adventures, and finding healing through nature, all aimed at promoting emotional well-being and support.
+
+![](images/clipboard-1057036328.png)
+
+![](images/clipboard-1776398611.png)
+
+-   **At Risk Stage:**
+
+    If the model predicts a post as *Suicidal* or *At Risk*, the user is provided with tailored content, including helpline numbers, professional assistance contacts, blogs for guidance, trusted doctor details, and an option to call the *988* helpline. Additionally, the platform connects the user with *SoulGuard Support* for immediate help and resources.
+
+![](images/clipboard-2587993409.png)
+
+![](images/clipboard-1044320660.png)
+
+## 2. Back-End Models Overview
 
 To deliver accurate and insightful results, our backend leverages advanced machine learning models and natural language processing techniques. The workflow includes:
 
