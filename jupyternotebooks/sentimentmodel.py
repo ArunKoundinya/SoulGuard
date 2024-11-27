@@ -3,9 +3,22 @@ from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 from textblob import TextBlob
 from nltk.tokenize import word_tokenize
 
+import sys
+import os
 
-# custom worrywords
-Worry= pd.read_csv("data/worrywords-v1.csv")
+# Check if the script is running in a PyInstaller bundle
+if getattr(sys, 'frozen', False):
+    # If frozen (running as a bundled app), get the base path from the temporary extraction folder
+    base_path = sys._MEIPASS
+else:
+    # If not frozen (running as a normal script), use the current working directory
+    base_path = os.path.abspath(".")
+
+# Build the full file path to the CSV
+file_path = os.path.join(base_path, 'data', 'worrywords-v1.csv')
+
+# Read the CSV file
+Worry = pd.read_csv(file_path)
 Worry = Worry[Worry['Mean']>0]
 worrywords_dict = dict(zip(Worry['Term'],Worry['Mean']))
 
