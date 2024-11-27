@@ -1,6 +1,9 @@
 import pandas as pd
 
-data = pd.read_csv("https://media.githubusercontent.com/media/ArunKoundinya/SoulGuard/refs/heads/master/data/SoulG_Update.csv", nrows=20)
+data = pd.read_csv(
+    "https://media.githubusercontent.com/media/ArunKoundinya/SoulGuard/refs/heads/master/data/SoulG_Update.csv",
+    nrows=20,
+)
 
 
 def test_cleaned_text():
@@ -15,4 +18,3 @@ def test_lemmatized():
 def test_lowercase():
     for word in data["cleaned_text"][0].split():
         assert word.islower()
-
