@@ -14,7 +14,7 @@ Sharing below the templates used inside the app:
 
     This is the landing page where users are first directed, featuring two main sections: *For You* (focused on personal well-being) and *To Whom You Care* (offering support for loved ones).
 
-![](images/clipboard-3033144047.png)
+![](images/Home_Page.jpg)
 
 -   **Sign In Page:**
 
@@ -82,9 +82,8 @@ To deliver accurate and insightful results, our backend leverages advanced machi
 
     3.  **Topic Analysis** using Latent Dirichlet Allocation (LDA) to extract hidden topics.
 
-    ```{=html}
     <!-- -->
-    ```
+
     1.  ![](images/clipboard-1477693439.png)
 
     ![](images/clipboard-778513236.png)
