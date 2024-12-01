@@ -10,7 +10,6 @@ from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 import ssl
-import nltk
 import emoji  # Make sure to import the emoji module
 
 ssl._create_default_https_context = ssl._create_unverified_context
