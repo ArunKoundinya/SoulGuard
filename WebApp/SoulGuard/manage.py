@@ -6,7 +6,14 @@ import sys
 
 def main():
     """Run administrative tasks."""
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'soul.settings')
+    # Handle PyInstaller environment
+    if getattr(sys, 'frozen', False):
+        # If running as a PyInstaller bundled app
+        os.environ['DJANGO_SETTINGS_MODULE'] = 'soul.settings'
+        os.environ['PYTHONHOME'] = sys._MEIPASS  # PyInstaller's temp directory
+    else:
+        os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'soul.settings')
+
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:

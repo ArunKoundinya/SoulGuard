@@ -115,3 +115,8 @@ def terms_and_conditions(request):
 
 def recommendation(request):
     return render(request, 'myapp/recommendation.html')
+
+def test_view(request):
+    from django.conf import settings
+    template_path = os.path.join(settings.BASE_DIR, 'myapp/templates/home.html')
+    return render(request, 'myapp/home.html', context={'template_path': template_path})

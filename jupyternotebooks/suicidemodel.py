@@ -7,6 +7,8 @@ from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 from tensorflow.keras.preprocessing.sequence import pad_sequences
+import os
+import sys
 
 
 def preprocess(text):
@@ -84,17 +86,30 @@ def format_examples(data1, vocab_dict, maxlen):
 
 
 def extractsuicidescore(text):
-    # print("Input processed, running model...")
-    # print(text)
-    model_bistm_pretrained = pickle.load(open("data/suicide_detection_model.pkl", "rb"))
-    vocab_dict = pickle.load(open("data/vocab_dict.pkl", "rb"))
+    # Determine the base path depending on the runtime environment
+    if getattr(sys, 'frozen', False):  # Check if running in a PyInstaller bundle
+        base_path = sys._MEIPASS  # PyInstaller extraction directory
+    else:
+        base_path = os.path.abspath(".")  # Directory of the current script
 
+    # Resolve the full paths for the model and vocabulary files
+    model_path = os.path.join(base_path, "data", "suicide_detection_model.pkl")
+    vocab_path = os.path.join(base_path, "data", "vocab_dict.pkl")
+
+    # Load the model and vocabulary files
+    with open(model_path, "rb") as model_file:
+        model_bistm_pretrained = pickle.load(model_file)
+    with open(vocab_path, "rb") as vocab_file:
+        vocab_dict = pickle.load(vocab_file)
+
+    # Preprocess the input text
     cleanedtext = preprocess(text)
 
+    # Prepare input data for prediction
     df = pd.DataFrame({"text": [text], "cleaned_text": [cleanedtext]})
-
     X_input = format_examples(df, vocab_dict, 100)
 
+    # Run the prediction
     prediction = model_bistm_pretrained.predict(X_input, verbose=0).astype(float)
 
     return prediction.max()

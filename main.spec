@@ -9,11 +9,8 @@ a = Analysis(
     pathex=[],
     binaries=[],
     datas=[
-        ('WebApp/SoulGuard', 'WebApp/SoulGuard'),
-        ('WebApp/SoulGuard/myapp', 'WebApp/SoulGuard/myapp'),
-        ('WebApp/SoulGuard/soul', 'WebApp/SoulGuard/soul'),
-        ('WebApp/SoulGuard/myapp/Templates', 'WebApp/SoulGuard/myapp/Templates'),  # Include templates
-        ('WebApp/SoulGuard/static', 'WebApp/SoulGuard/static'),  # Include static files
+        ('WebApp/SoulGuard/myapp/templates', 'myapp/templates'),  # Correct template path
+        ('WebApp/SoulGuard/static', 'static'),  # Correct static path
         ('data/worrywords-v1.csv', 'data'),
         ('data/vocab_dict.pkl', 'data'),
         ('data/suicide_detection_model.pkl', 'data'),
