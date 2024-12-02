@@ -87,13 +87,25 @@ def finalpredictions(text):
         text
     )
 
-    if suicidescore < 0.5:
-        if sentimentscore < 0.5:
+    print(suicidescore)
+    print(sentimentscore)
+
+    if suicidescore < 0.4:
+        if sentimentscore < 0.4:
             return "Recommendation1.png"
+        elif sentimentscore < 0.6:
+            return "Recommendation5.png"
         else:
             return "Recommendation2.png"
-    else:
-        if sentimentscore < 0.5:
+    elif suicidescore < 0.6:
+        if sentimentscore < 0.4:
             return "Recommendation3.png"
+        else:
+            return "Recommendation5.png"
+    else :   
+        if sentimentscore < 0.4:
+            return "Recommendation3.png"
+        elif sentimentscore < 0.6:
+            return "Recommendation5.png"
         else:
             return "Recommendation4.png"
