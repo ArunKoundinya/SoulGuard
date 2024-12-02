@@ -20,51 +20,51 @@ Sharing below the templates used inside the app:
 
     When a new user clicks on "Explore," they will be directed to the Sign-In page.
 
-    ![](images/clipboard-193719618.png)
+    ![](images/SignIn_Page.png)
 
 -   **Registration Page:**
 
     If the user is new, they can select the "Register" option, which will take them to the registration page to create a username and password.
 
-![](images/clipboard-3923187621.png)
+![](images/Registration_Page.png)
 
 -   **Create New Post Page:**
 
     Once you click on explore button either for you or to whom you care it will take you to share feelings page.
 
-![](images/clipboard-369148278.png)
+![](images/NewPostPageHappy.png)
 
 -   **Happy Stage:**
 
     When a post is shared, and the model predicts the stage as *Happy*, it reflects positive sentiment and emotional well-being in the user's content.
 
-![](images/clipboard-410706734.png)
+![](images/HappyStagePage.png)
 
 -   **Depressed Stage:**
 
     If the model predicts a post as *Depressed*, the user is directed to a dedicated page with a survey form. Based on the survey responses, personalized content and resources are provided to support their mental well-being.
 
-![](images/clipboard-2651965137.png)
+![](images/NewPostPageSad.png)
 
-![](images/clipboard-3499152409.png)
+![](images/SubmitSurveyPage.png)
 
-![](images/clipboard-2822837191.png)
+![](images/SadStagePage.png)
 
 -   **Uncertainty Stage:**
 
     If the model predicts a post as *Confused* or *Seeking Clarity*, the user is provided with personalized content encouraging mindfulness practices, physical activity, prioritizing rest, balanced nutrition, joining the SoulGuard community, exploring new adventures, and finding healing through nature, all aimed at promoting emotional well-being and support.
 
-![](images/clipboard-1057036328.png)
+![](images/NewPostPageUncertain.png)
 
-![](images/clipboard-1776398611.png)
+![](images/UncertainStagePage.png)
 
 -   **At Risk Stage:**
 
     If the model predicts a post as *Suicidal* or *At Risk*, the user is provided with tailored content, including helpline numbers, professional assistance contacts, blogs for guidance, trusted doctor details, and an option to call the *988* helpline. Additionally, the platform connects the user with *SoulGuard Support* for immediate help and resources.
 
-![](images/clipboard-2587993409.png)
+![](images/NewPostPageAtRisk.png)
 
-![](images/clipboard-1044320660.png)
+![](images/AtRiskStagePage.png)
 
 ## 2. Back-End Models Overview
 
@@ -72,38 +72,36 @@ To deliver accurate and insightful results, our backend leverages advanced machi
 
 1.  **Data Cleaning** to ensure robust preprocessing of raw text data.
 
-    ![](images/clipboard-2879810987.png)
+    ![](images/DataCleaning.png)
 
-    ![](images/clipboard-2404938390.png)
+    ![](images/DataCleaningOutput.png)
 
 2.  **Word Cloud** visualization to highlight key themes from the dataset.
 
-    ![](images/clipboard-3771990736.png)
+    ![](images/WordCloud.png)
 
     3.  **Topic Analysis** using Latent Dirichlet Allocation (LDA) to extract hidden topics.
 
-    <!-- -->
+    4.  ![](images/TopicAnalysis-1.png)
 
-    1.  ![](images/clipboard-1477693439.png)
-
-    ![](images/clipboard-778513236.png)
+    ![](images/TopicAnalysis-2.png)
 
     4.  **BiLSTM Model Comparisons** to evaluate deep learning performance in text classification tasks.
 
-        ![](images/clipboard-1629743760.png)
+        ![](images/ModelComparision-1.png)
 
     5.  **LiME Comparisons** to interpret and validate model predictions on sample sentences, enhancing trust and explainability.
 
-        ![](images/clipboard-3832348058.png)
+        ![](images/ModelComparision-2.png)
 
-        ![](images/clipboard-1641379668.png)
+        ![](images/ModelComparision-3.png)
 
     6.  **Suicide Model Update:** Boosting Accuracy with Hyperparameter Tuning and Regularization
 
         The Suicide Model was updated through hyperparameter tuning to optimize performance, using the best parameters identified to enhance model accuracy by 1.5%. L2 regularization was applied to mitigate overfitting, ensuring the model generalized well to new data while maintaining improved accuracy.
 
-        ![](images/clipboard-21891035.png)
+        ![](images/SuicideModelUpdate-1.png)
 
-        ![](images/clipboard-2626867677.png)
+        ![](images/SuicideModelUpdate-2.png)
 
-        ![](images/clipboard-2036658578.png)
+        ![](images/ImprovedModelAccuracy.png)
