@@ -16,3 +16,4 @@ textblob
 tensorflow
 django
 pyinstaller
+scikit-learn

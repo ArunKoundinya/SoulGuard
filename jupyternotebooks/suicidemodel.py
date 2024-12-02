@@ -87,7 +87,7 @@ def format_examples(data1, vocab_dict, maxlen):
 
 def extractsuicidescore(text):
     # Determine the base path depending on the runtime environment
-    if getattr(sys, 'frozen', False):  # Check if running in a PyInstaller bundle
+    if getattr(sys, "frozen", False):  # Check if running in a PyInstaller bundle
         base_path = sys._MEIPASS  # PyInstaller extraction directory
     else:
         base_path = os.path.abspath(".")  # Directory of the current script

@@ -102,7 +102,7 @@ def finalpredictions(text):
             return "Recommendation3.png"
         else:
             return "Recommendation5.png"
-    else :   
+    else:
         if sentimentscore < 0.4:
             return "Recommendation3.png"
         elif sentimentscore < 0.6:
