@@ -2,7 +2,8 @@ import sys
 import os
 # Add the path to the jupyternotebooks folder
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "..")))
-
+import subprocess
+from django.http import JsonResponse
 from django.shortcuts import render, redirect
 from .forms import SignUpForm, PostForm, SurveyForm, LoginForm
 from django.contrib import messages
@@ -120,3 +121,11 @@ def test_view(request):
     from django.conf import settings
     template_path = os.path.join(settings.BASE_DIR, 'myapp/templates/home.html')
     return render(request, 'myapp/home.html', context={'template_path': template_path})
+
+def run_chatbot(request):
+    try:
+        # Running the chatbot Python script as a subprocess
+        subprocess.run(['python', 'chatbot/soulguard_chatbot.py'], check=True)
+        return redirect('home')
+    except subprocess.CalledProcessError as e:
+        return redirect('home')

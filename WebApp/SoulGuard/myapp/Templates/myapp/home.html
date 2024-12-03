@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SoulGuard</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="{% static 'css/style2.css' %}">
 </head>
 <body>
@@ -34,6 +35,7 @@
     </main>
     <footer>
         <p class="footer-message">Thank you for visiting SoulGuard.</p>
+        <a href="{% url 'run_chatbot' %}">Start Chatbot</a>
     </footer>
 </body>
 </html>

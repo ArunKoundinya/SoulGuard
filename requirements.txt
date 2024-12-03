@@ -17,3 +17,4 @@ tensorflow
 django
 pyinstaller
 scikit-learn
+pyqt5

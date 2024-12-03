@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import for_you, to_whom_you_care, UserLoginView, dashboard, register, add_post, post_list, add_survey, home, terms_and_conditions, recommendation
+from .views import for_you, to_whom_you_care, UserLoginView, dashboard, register, add_post, post_list, add_survey, home, terms_and_conditions, recommendation,run_chatbot
 
 urlpatterns = [
     path('', home, name='home'),
@@ -14,4 +14,5 @@ urlpatterns = [
     path('to_whom_you_care/', to_whom_you_care, name='to_whom_you_care'),
     path('terms-and-conditions/', terms_and_conditions, name='terms_and_conditions'), 
     path('recommendation/', recommendation, name='recommendation'),  # New path for Terms and Conditions
+    path('run-chatbot/', run_chatbot, name='run_chatbot'),
 ]
