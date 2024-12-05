@@ -93,18 +93,16 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="./about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link active" href="./soulguard.html" aria-current="page"> 
 <span class="menu-text">SoulGuard</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./recommendation.html"> 
-<span class="menu-text">Our Recommendations</span></a>
-  </li>  
-</ul>
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
-<span class="menu-text">About</span></a>
+<span class="menu-text">OurRecommendations</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -124,7 +122,6 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#front-end-overview" id="toc-front-end-overview" class="nav-link active" data-scroll-target="#front-end-overview">1. Front-End Overview</a></li>
   <li><a href="#back-end-models-overview" id="toc-back-end-models-overview" class="nav-link" data-scroll-target="#back-end-models-overview">2. Back-End Models Overview</a></li>
-  <li><a href="#chatbot" id="toc-chatbot" class="nav-link" data-scroll-target="#chatbot">3. Chatbot</a></li>
   </ul>
 </nav>
     </div>
@@ -159,43 +156,75 @@ ul.task-list li input[type="checkbox"] {
 <li><p><strong>Home Page:</strong></p>
 <p>This is the landing page where users are first directed, featuring two main sections: <em>For You</em> (focused on personal well-being) and <em>To Whom You Care</em> (offering support for loved ones).</p></li>
 </ul>
-<p><img src="images/Home_Page.jpg" class="img-fluid" width="733"></p>
+<p><img src="images/Home_Page.jpg" class="img-fluid"></p>
 <ul>
 <li><p><strong>Sign In Page:</strong></p>
 <p>When a new user clicks on “Explore,” they will be directed to the Sign-In page.</p>
-<p><img src="images/SignIn_Page.png" class="img-fluid" width="710"></p></li>
+<p><img src="images/clipboard-193719618.png" class="img-fluid"></p></li>
 <li><p><strong>Registration Page:</strong></p>
 <p>If the user is new, they can select the “Register” option, which will take them to the registration page to create a username and password.</p></li>
 </ul>
-<p><img src="images/Registration_Page.png" class="img-fluid" width="738"></p>
+<p><img src="images/clipboard-3923187621.png" class="img-fluid"></p>
 <ul>
 <li><p><strong>Create New Post Page:</strong></p>
 <p>Once you click on explore button either for you or to whom you care it will take you to share feelings page.</p></li>
 </ul>
-<p><img src="images/NewPostPageHappy.png" width="738" height="435"></p>
-<p><strong>The “Share Feeling” feature leads to the recommendations section, supported by a backend framework that computes both the suicide score and the sentiment score, as detailed below.</strong></p>
+<p><img src="images/clipboard-369148278.png" class="img-fluid"></p>
+<ul>
+<li><p><strong>Happy Stage:</strong></p>
+<p>When a post is shared, and the model predicts the stage as <em>Happy</em>, it reflects positive sentiment and emotional well-being in the user’s content.</p></li>
+</ul>
+<p><img src="images/clipboard-410706734.png" class="img-fluid"></p>
+<ul>
+<li><p><strong>Depressed Stage:</strong></p>
+<p>If the model predicts a post as <em>Depressed</em>, the user is directed to a dedicated page with a survey form. Based on the survey responses, personalized content and resources are provided to support their mental well-being.</p></li>
+</ul>
+<p><img src="images/clipboard-2651965137.png" class="img-fluid"></p>
+<p><img src="images/clipboard-3499152409.png" class="img-fluid"></p>
+<p><img src="images/clipboard-2822837191.png" class="img-fluid"></p>
+<ul>
+<li><p><strong>Uncertainty Stage:</strong></p>
+<p>If the model predicts a post as <em>Confused</em> or <em>Seeking Clarity</em>, the user is provided with personalized content encouraging mindfulness practices, physical activity, prioritizing rest, balanced nutrition, joining the SoulGuard community, exploring new adventures, and finding healing through nature, all aimed at promoting emotional well-being and support.</p></li>
+</ul>
+<p><img src="images/clipboard-1057036328.png" class="img-fluid"></p>
+<p><img src="images/clipboard-1776398611.png" class="img-fluid"></p>
+<ul>
+<li><p><strong>At Risk Stage:</strong></p>
+<p>If the model predicts a post as <em>Suicidal</em> or <em>At Risk</em>, the user is provided with tailored content, including helpline numbers, professional assistance contacts, blogs for guidance, trusted doctor details, and an option to call the <em>988</em> helpline. Additionally, the platform connects the user with <em>SoulGuard Support</em> for immediate help and resources.</p></li>
+</ul>
+<p><img src="images/clipboard-2587993409.png" class="img-fluid"></p>
+<p><img src="images/clipboard-1044320660.png" class="img-fluid"></p>
 </section>
 <section id="back-end-models-overview" class="level2">
 <h2 class="anchored" data-anchor-id="back-end-models-overview">2. Back-End Models Overview</h2>
 <p>To deliver accurate and insightful results, our backend leverages advanced machine learning models and natural language processing techniques. The workflow includes:</p>
 <ol type="1">
-<li><p>Suicide Model :</p>
+<li><p><strong>Data Cleaning</strong> to ensure robust preprocessing of raw text data.</p>
+<p><img src="images/clipboard-2879810987.png" class="img-fluid"></p>
+<p><img src="images/clipboard-2404938390.png" class="img-fluid"></p></li>
+<li><p><strong>Word Cloud</strong> visualization to highlight key themes from the dataset.</p>
+<p><img src="images/clipboard-3771990736.png" class="img-fluid"></p>
+<ol start="3" type="1">
+<li><strong>Topic Analysis</strong> using Latent Dirichlet Allocation (LDA) to extract hidden topics.</li>
+</ol>
+<!-- -->
 <ol type="1">
-<li><p>The suicide detection model is designed with three BiLSTM layers, followed by a flattening layer to process the output. This is then passed through a series of dense layers before reaching the output layer.</p>
-<p><img src="images/Model Architecture.png" class="img-fluid" width="446"></p></li>
-</ol></li>
-<li><p>Sentiment Model</p>
-<ol type="1">
-<li><p>The sentiment model is a hybrid approach combining TextBlob, VADER sentiment analysis, custom-defined words, and worry-related words derived from the NRC lexicon. The final sentiment score is calculated as a weighted average of these components.</p>
-<p><img src="images/Sentiment Architecture.png" class="img-fluid" width="583"></p></li>
+<li><img src="images/clipboard-1477693439.png" class="img-fluid"></li>
+</ol>
+<p><img src="images/clipboard-778513236.png" class="img-fluid"></p>
+<ol start="4" type="1">
+<li><p><strong>BiLSTM Model Comparisons</strong> to evaluate deep learning performance in text classification tasks.</p>
+<p><img src="images/clipboard-1629743760.png" class="img-fluid"></p></li>
+<li><p><strong>LiME Comparisons</strong> to interpret and validate model predictions on sample sentences, enhancing trust and explainability.</p>
+<p><img src="images/clipboard-3832348058.png" class="img-fluid"></p>
+<p><img src="images/clipboard-1641379668.png" class="img-fluid"></p></li>
+<li><p><strong>Suicide Model Update:</strong> Boosting Accuracy with Hyperparameter Tuning and Regularization</p>
+<p>The Suicide Model was updated through hyperparameter tuning to optimize performance, using the best parameters identified to enhance model accuracy by 1.5%. L2 regularization was applied to mitigate overfitting, ensuring the model generalized well to new data while maintaining improved accuracy.</p>
+<p><img src="images/clipboard-21891035.png" class="img-fluid"></p>
+<p><img src="images/clipboard-2626867677.png" class="img-fluid"></p>
+<p><img src="images/clipboard-2036658578.png" class="img-fluid"></p></li>
 </ol></li>
 </ol>
-</section>
-<section id="chatbot" class="level2">
-<h2 class="anchored" data-anchor-id="chatbot">3. Chatbot</h2>
-<p>The chatbot is designed to provide users with quick and seamless virtual assistance, with the ultimate goal of facilitating a connection to a real agent, such as a therapist, when necessary.</p>
-<p>Built with customized intents, the chatbot leverages NLP techniques, including a Count Vectorizer and a Multinomial Naive Bayes classifier, to accurately identify user intents based on their queries. This enables the chatbot to address user questions effectively using predefined responses tailored to their needs.</p>
-<p><img src="images/Chatbot.jpg" class="img-fluid" width="531"></p>
 
 
 </section>
