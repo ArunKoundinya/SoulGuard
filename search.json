@@ -61,5 +61,12 @@
     "title": "How the App is Built",
     "section": "2. Back-End Models Overview",
     "text": "2. Back-End Models Overview\nTo deliver accurate and insightful results, our backend leverages advanced machine learning models and natural language processing techniques. The workflow includes:\n\nSuicide Model :\n\nThe suicide detection model is designed with three BiLSTM layers, followed by a flattening layer to process the output. This is then passed through a series of dense layers before reaching the output layer.\n\n\nSentiment Model\n\nThe sentiment model is a hybrid approach combining TextBlob, VADER sentiment analysis, custom-defined words, and worry-related words derived from the NRC lexicon. The final sentiment score is calculated as a weighted average of these components."
+  },
+  {
+    "objectID": "soulguard.html#chatbot",
+    "href": "soulguard.html#chatbot",
+    "title": "How the App is Built",
+    "section": "3. Chatbot",
+    "text": "3. Chatbot\nThe chatbot is designed to provide users with quick and seamless virtual assistance, with the ultimate goal of facilitating a connection to a real agent, such as a therapist, when necessary.\nBuilt with customized intents, the chatbot leverages NLP techniques, including a Count Vectorizer and a Multinomial Naive Bayes classifier, to accurately identify user intents based on their queries. This enables the chatbot to address user questions effectively using predefined responses tailored to their needs."
   }
 ]
