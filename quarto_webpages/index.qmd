@@ -1,10 +1,10 @@
 ---
-title: "SoulGuard: A Data-Driven Approach to Preventing Depression-Induced Suicide Through Social Media Analysis"
+title: "SoulGuard: Depression-Induced Suicide Prevention Application"
 author:
   - name: "SoulGuard - Arun, Anusha, Mrunal, Sachin, Tushar"
     affiliations: 
       - name: "College of Information Science, University of Arizona"
-description: "This project aims to develop an AI-driven platform that ethically analyzes social media posts to identify signs of depression and provides personalized interventions to prevent suicide."
+description: "This project aims to to identify signs of depression and provides personalized interventions to prevent suicide."
 format:
    html:
     embed-resources: true
@@ -13,7 +13,7 @@ execute:
   warning: false
 ---
 
-## Introduction
+## Why SoulGuard?
 
 Suicides are a global crisis, with over 700,000 lives lost annually. Root causes include social isolation, financial distress, relationship struggles, and mental health disorders, with depression as a leading contributor. Depression often leaves individuals feeling hopeless and emotionally overwhelmed, and societal stigma or lack of resources prevents many from seeking help in time.
 
@@ -21,28 +21,24 @@ Depression is a mental health condition marked by persistent sadness, loss of in
 
 Soul Guard addresses this by leveraging AI to analyze social media and user input, detecting depression indicators and differentiating between general symptoms and suicide risks. With its dual-user model—"For You" and "For Whom You Care"—the app provides tailored interventions, emotional tracking, and direct access to resources, empowering users to take proactive steps and save lives.
 
-## Market Research
+## How Soul Guard Stands Out?
 
 The global mental health solutions market is expanding rapidly, projected to reach \$10 billion by 2026, driven by rising awareness and demand for innovative tools. This includes apps, teletherapy services, and suicide prevention platforms, highlighting the urgent need for effective solutions, particularly as suicide rates rise among younger populations.
 
-![](images/market-research-table.png)
+| Preventive Apps | Crisis Text Line | Talk space | Woebot | Virtual Hope Box | Suicide Safe | Soul Guard ( Our App ) |
+|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
+| **Social Media Analysis** | No | No | No | No | No | Yes |
+| **Real-Time Depression** | No | No | No | No | No | Yes |
+| **Personalized Interventions** | General support | Therapy-based interventions | Yes | No | No | Yes (real-time, custom-based) |
+| **Dual-Segment Targetting** | No | No | No | No | No | Yes |
+| **Unique Features** | Text-based support in crisis but lacks analysis of social media content and tailored feedback. | Provides licensed online therapy but doesn't utilize real-time social media insights for early detection | AI-driven conversational agent without integration of social media analysis or dual-user functionality. | Offers tools for stress management but lacks automated analysis for depression or suicide detection. | Focuses on educating healthcare provides rather than offering user-focused interventions. | Combines real-time social media analysis with a rule-based engine for personalized support and dual-segment targeting. |
 
 Existing competitors offer features like self-care techniques and mental health tracking but often lack real-time detection and personalized interventions. *Soul Guard* differentiates itself by addressing these gaps, providing tailored insights and proactive support that many current applications do not offer.
 
-| Preventive Apps                | Headspace | Calm | Happify | Sanvello | Soul Guard       |
-|-------------------|-----------|-----------|-----------|-----------|-----------|
-| **Self-Care Tools**            | Yes       | Yes  | Yes     | Yes      | Yes              |
-| **Mood Tracking**              | No        | No   | Yes     | Yes      | Yes              |
-| **Personalized Interventions** | No        | No   | No      | No       | Yes (customized) |
-| **Social Media Integration**   | No        | No   | No      | No       | Yes              |
-| **Real-Time Analysis**         | No        | No   | No      | No       | Yes              |
-
-## Why SoulGuard & How The App Helps
-
-Soul Guard is a cutting-edge mental health app that bridges gaps in existing solutions by offering dual-user functionality, real-time analysis, and tailored interventions. Unlike traditional tools, it leverages advanced AI and deep learning to analyze social media activity, distinguishing between general depressive symptoms and suicide risks.
-
-This app proactively supports mental well-being by providing real-time insights, personalized recommendations, and actionable strategies, empowering users to monitor emotional health, connect with support, and assist loved ones.
-
-### Demonstration Video: See How Soul Guard Works
-
-Link:
+| Preventive Apps | Headspace | Calm | Happify | Sanvello | Soul Guard |
+|------------|------------|------------|------------|------------|------------|
+| **Self-Care Tools** | Yes | Yes | Yes | Yes | Yes |
+| **Mood Tracking** | No | No | Yes | Yes | Yes |
+| **Personalized Interventions** | No | No | No | No | Yes (customized) |
+| **Social Media Integration** | No | No | No | No | Yes |
+| **Real-Time Analysis** | No | No | No | No | Yes |

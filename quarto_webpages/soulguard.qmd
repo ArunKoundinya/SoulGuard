@@ -14,94 +14,40 @@ Sharing below the templates used inside the app:
 
     This is the landing page where users are first directed, featuring two main sections: *For You* (focused on personal well-being) and *To Whom You Care* (offering support for loved ones).
 
-![](images/Home_Page.jpg)
+![](images/Home_Page.jpg){width="733"}
 
 -   **Sign In Page:**
 
     When a new user clicks on "Explore," they will be directed to the Sign-In page.
 
-    ![](images/SignIn_Page.png)
+    ![](images/SignIn_Page.png){width="710"}
 
 -   **Registration Page:**
 
     If the user is new, they can select the "Register" option, which will take them to the registration page to create a username and password.
 
-![](images/Registration_Page.png)
+![](images/Registration_Page.png){width="738"}
 
 -   **Create New Post Page:**
 
     Once you click on explore button either for you or to whom you care it will take you to share feelings page.
 
-![](images/NewPostPageHappy.png)
+![](images/NewPostPageHappy.png){width="738" height="435"}
 
--   **Happy Stage:**
-
-    When a post is shared, and the model predicts the stage as *Happy*, it reflects positive sentiment and emotional well-being in the user's content.
-
-![](images/HappyStagePage.png)
-
--   **Depressed Stage:**
-
-    If the model predicts a post as *Depressed*, the user is directed to a dedicated page with a survey form. Based on the survey responses, personalized content and resources are provided to support their mental well-being.
-
-![](images/NewPostPageSad.png)
-
-![](images/SubmitSurveyPage.png)
-
-![](images/SadStagePage.png)
-
--   **Uncertainty Stage:**
-
-    If the model predicts a post as *Confused* or *Seeking Clarity*, the user is provided with personalized content encouraging mindfulness practices, physical activity, prioritizing rest, balanced nutrition, joining the SoulGuard community, exploring new adventures, and finding healing through nature, all aimed at promoting emotional well-being and support.
-
-![](images/NewPostPageUncertain.png)
-
-![](images/UncertainStagePage.png)
-
--   **At Risk Stage:**
-
-    If the model predicts a post as *Suicidal* or *At Risk*, the user is provided with tailored content, including helpline numbers, professional assistance contacts, blogs for guidance, trusted doctor details, and an option to call the *988* helpline. Additionally, the platform connects the user with *SoulGuard Support* for immediate help and resources.
-
-![](images/NewPostPageAtRisk.png)
-
-![](images/AtRiskStagePage.png)
+**The "Share Feeling" feature leads to the recommendations section, supported by a backend framework that computes both the suicide score and the sentiment score, as detailed below.**
 
 ## 2. Back-End Models Overview
 
 To deliver accurate and insightful results, our backend leverages advanced machine learning models and natural language processing techniques. The workflow includes:
 
-1.  **Data Cleaning** to ensure robust preprocessing of raw text data.
+1.  Suicide Model :
 
-    ![](images/DataCleaning.png)
+    1.  The suicide detection model is designed with three BiLSTM layers, followed by a flattening layer to process the output. This is then passed through a series of dense layers before reaching the output layer.
 
-    ![](images/DataCleaningOutput.png)
+        ![](images/Model%20Architecture.png){width="446"}
 
-2.  **Word Cloud** visualization to highlight key themes from the dataset.
+2.  Sentiment Model
 
-    ![](images/WordCloud.png)
+    1.  The sentiment model is a hybrid approach combining TextBlob, VADER sentiment analysis, custom-defined words, and worry-related words derived from the NRC lexicon. The final sentiment score is calculated as a weighted average of these components.
 
-    3.  **Topic Analysis** using Latent Dirichlet Allocation (LDA) to extract hidden topics.
-
-    4.  ![](images/TopicAnalysis-1.png)
-
-    ![](images/TopicAnalysis-2.png)
-
-    4.  **BiLSTM Model Comparisons** to evaluate deep learning performance in text classification tasks.
-
-        ![](images/ModelComparision-1.png)
-
-    5.  **LiME Comparisons** to interpret and validate model predictions on sample sentences, enhancing trust and explainability.
-
-        ![](images/ModelComparision-2.png)
-
-        ![](images/ModelComparision-3.png)
-
-    6.  **Suicide Model Update:** Boosting Accuracy with Hyperparameter Tuning and Regularization
-
-        The Suicide Model was updated through hyperparameter tuning to optimize performance, using the best parameters identified to enhance model accuracy by 1.5%. L2 regularization was applied to mitigate overfitting, ensuring the model generalized well to new data while maintaining improved accuracy.
-
-        ![](images/SuicideModelUpdate-1.png)
-
-        ![](images/SuicideModelUpdate-2.png)
-
-        ![](images/ImprovedModelAccuracy.png)
+        ![](images/Sentiment%20Architecture.png){width="583"}
