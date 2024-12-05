@@ -51,3 +51,11 @@ To deliver accurate and insightful results, our backend leverages advanced machi
     1.  The sentiment model is a hybrid approach combining TextBlob, VADER sentiment analysis, custom-defined words, and worry-related words derived from the NRC lexicon. The final sentiment score is calculated as a weighted average of these components.
 
         ![](images/Sentiment%20Architecture.png){width="583"}
+
+## 3. Chatbot 
+
+The chatbot is designed to provide users with quick and seamless virtual assistance, with the ultimate goal of facilitating a connection to a real agent, such as a therapist, when necessary.
+
+Built with customized intents, the chatbot leverages NLP techniques, including a Count Vectorizer and a Multinomial Naive Bayes classifier, to accurately identify user intents based on their queries. This enables the chatbot to address user questions effectively using predefined responses tailored to their needs.
+
+![](images/Chatbot.jpg){width="531"}

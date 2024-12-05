@@ -10,7 +10,7 @@ website:
       - href: soulguard.qmd
         text: SoulGuard
       - href: recommendation.qmd
-        text: OurRecommendations
+        text: Our Recommendations
     right:
       - href: about.qmd
         text: About  
