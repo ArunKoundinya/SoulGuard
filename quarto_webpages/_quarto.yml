@@ -13,7 +13,7 @@ website:
         text: Our Recommendations
     right:
       - href: about.qmd
-        text: About  
+        text: About the team
 
 format:
   html:
