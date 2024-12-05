@@ -12,7 +12,7 @@ The project **SoulGuard** was developed for **INFO 698 - Capstone Project** at t
 
 -   **Anusha Nagaraja**: 2nd Year Information Science with specialization in Machine Learning, MS Student.
 
--   **Sachin Panduranga Patil**: 2nd Year Information Science with specialization in Machine Learning, MS Student.
+-   **Sachin Pandurang Patil**: 2nd Year Information Science with specialization in Machine Learning, MS Student.
 
 -   **Mrunal Jadhav**: 2nd Year Information Science with specialization in Machine Learning, MS Student.
 
