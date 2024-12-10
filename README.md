@@ -1,5 +1,7 @@
 [![Python application test with Github Actions](https://github.com/ArunKoundinya/SoulGuard/actions/workflows/main.yml/badge.svg)](https://github.com/ArunKoundinya/SoulGuard/actions/workflows/main.yml)
 
+[![pages-build-deployment](https://github.com/ArunKoundinya/SoulGuard/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/ArunKoundinya/SoulGuard/actions/workflows/pages/pages-build-deployment)
+
 ### SoulGuard: Depression-Induced Suicide Prevention Application
 
 Why SoulGuard?
