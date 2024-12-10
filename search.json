@@ -1,0 +1,72 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "SoulGuard: Depression-Induced Suicide Prevention Application",
+    "section": "",
+    "text": "Suicides are a global crisis, with over 700,000 lives lost annually. Root causes include social isolation, financial distress, relationship struggles, and mental health disorders, with depression as a leading contributor. Depression often leaves individuals feeling hopeless and emotionally overwhelmed, and societal stigma or lack of resources prevents many from seeking help in time.\nDepression is a mental health condition marked by persistent sadness, loss of interest, and fatigue. Research including the seminal studies by Beck and colleagues, highlights a strong link between depression and suicide, as untreated depression can lead to suicidal ideation due to feelings of hopelessness. Addressing this connection is crucial to preventing tragedies.\nSoul Guard addresses this by leveraging AI to analyze social media and user input, detecting depression indicators and differentiating between general symptoms and suicide risks. With its dual-user model—“For You” and “For Whom You Care”—the app provides tailored interventions, emotional tracking, and direct access to resources, empowering users to take proactive steps and save lives."
+  },
+  {
+    "objectID": "index.html#why-soulguard",
+    "href": "index.html#why-soulguard",
+    "title": "SoulGuard: Depression-Induced Suicide Prevention Application",
+    "section": "",
+    "text": "Suicides are a global crisis, with over 700,000 lives lost annually. Root causes include social isolation, financial distress, relationship struggles, and mental health disorders, with depression as a leading contributor. Depression often leaves individuals feeling hopeless and emotionally overwhelmed, and societal stigma or lack of resources prevents many from seeking help in time.\nDepression is a mental health condition marked by persistent sadness, loss of interest, and fatigue. Research including the seminal studies by Beck and colleagues, highlights a strong link between depression and suicide, as untreated depression can lead to suicidal ideation due to feelings of hopelessness. Addressing this connection is crucial to preventing tragedies.\nSoul Guard addresses this by leveraging AI to analyze social media and user input, detecting depression indicators and differentiating between general symptoms and suicide risks. With its dual-user model—“For You” and “For Whom You Care”—the app provides tailored interventions, emotional tracking, and direct access to resources, empowering users to take proactive steps and save lives."
+  },
+  {
+    "objectID": "index.html#how-soul-guard-stands-out",
+    "href": "index.html#how-soul-guard-stands-out",
+    "title": "SoulGuard: Depression-Induced Suicide Prevention Application",
+    "section": "How Soul Guard Stands Out?",
+    "text": "How Soul Guard Stands Out?\nThe global mental health solutions market is expanding rapidly, projected to reach $10 billion by 2026, driven by rising awareness and demand for innovative tools. This includes apps, teletherapy services, and suicide prevention platforms, highlighting the urgent need for effective solutions, particularly as suicide rates rise among younger populations.\n\n\n\n\n\n\n\n\n\n\n\n\nPreventive Apps\nCrisis Text Line\nTalk space\nWoebot\nVirtual Hope Box\nSuicide Safe\nSoul Guard ( Our App )\n\n\n\n\nSocial Media Analysis\nNo\nNo\nNo\nNo\nNo\nYes\n\n\nReal-Time Depression\nNo\nNo\nNo\nNo\nNo\nYes\n\n\nPersonalized Interventions\nGeneral support\nTherapy-based interventions\nYes\nNo\nNo\nYes (real-time, custom-based)\n\n\nDual-Segment Targetting\nNo\nNo\nNo\nNo\nNo\nYes\n\n\nUnique Features\nText-based support in crisis but lacks analysis of social media content and tailored feedback.\nProvides licensed online therapy but doesn’t utilize real-time social media insights for early detection\nAI-driven conversational agent without integration of social media analysis or dual-user functionality.\nOffers tools for stress management but lacks automated analysis for depression or suicide detection.\nFocuses on educating healthcare provides rather than offering user-focused interventions.\nCombines real-time social media analysis with a rule-based engine for personalized support and dual-segment targeting.\n\n\n\nExisting competitors offer features like self-care techniques and mental health tracking but often lack real-time detection and personalized interventions. Soul Guard differentiates itself by addressing these gaps, providing tailored insights and proactive support that many current applications do not offer.\n\n\n\n\n\n\n\n\n\n\n\nPreventive Apps\nHeadspace\nCalm\nHappify\nSanvello\nSoul Guard\n\n\n\n\nSelf-Care Tools\nYes\nYes\nYes\nYes\nYes\n\n\nMood Tracking\nNo\nNo\nYes\nYes\nYes\n\n\nPersonalized Interventions\nNo\nNo\nNo\nNo\nYes (customized)\n\n\nSocial Media Integration\nNo\nNo\nNo\nNo\nYes\n\n\nReal-Time Analysis\nNo\nNo\nNo\nNo\nYes"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "The project SoulGuard was developed for INFO 698 - Capstone Project at the University of Arizona, under the guidance of Dr. Greg Chism. The team is composed of the following team members:\n\n\n\nArun Koundinya Parasa: 2nd Year Information Science with specialization in Machine Learning, MS Student.\nAnusha Nagaraja: 2nd Year Information Science with specialization in Machine Learning, MS Student.\nSachin Pandurang Patil: 2nd Year Information Science with specialization in Machine Learning, MS Student.\nMrunal Jadhav: 2nd Year Information Science with specialization in Machine Learning, MS Student.\nTushar Kant Singh: 2nd Year Information Science with specialization in Machine Learning, MS Student."
+  },
+  {
+    "objectID": "about.html#about-soulguard",
+    "href": "about.html#about-soulguard",
+    "title": "About",
+    "section": "",
+    "text": "The project SoulGuard was developed for INFO 698 - Capstone Project at the University of Arizona, under the guidance of Dr. Greg Chism. The team is composed of the following team members:\n\n\n\nArun Koundinya Parasa: 2nd Year Information Science with specialization in Machine Learning, MS Student.\nAnusha Nagaraja: 2nd Year Information Science with specialization in Machine Learning, MS Student.\nSachin Pandurang Patil: 2nd Year Information Science with specialization in Machine Learning, MS Student.\nMrunal Jadhav: 2nd Year Information Science with specialization in Machine Learning, MS Student.\nTushar Kant Singh: 2nd Year Information Science with specialization in Machine Learning, MS Student."
+  },
+  {
+    "objectID": "recommendation.html",
+    "href": "recommendation.html",
+    "title": "Recommendations",
+    "section": "",
+    "text": "The final recommendations are generated by leveraging the scores from both suicide and sentiment classification.\n\n\n\n\n\n\nRisk State\n\nThis will be most important and high risk factor where person needs immediate assistance and help with high professionals and care\n\n\nDilemma State\n\nThis is the stage where the person is in 50/50 mode not able to come out neither not able to accept the pain so he needs to pour out and vent stage\n\n\nIntrospect State\n\nThis is the stage where the person is not understanding whats going on within so they need time for themselves and explore their own needs\n\n\nSolace State\n\nThis is the stage where person is low but he really wants to come out of the pain and remove that baggage so they need to exploration.\n\n\nHappy State\n\nThis is the stage where person is free from all pain and no more worries or hanging in middle kind off and he is ready to improve his lifestyle and not much worried"
+  },
+  {
+    "objectID": "soulguard.html",
+    "href": "soulguard.html",
+    "title": "How the App is Built",
+    "section": "",
+    "text": "The SoulGuard Django Project front-end is designed to support mental health by creating a positive and user-friendly interface. Inspired by the 988 website, it features a professional layout with carefully selected header and footer formatting. Colors were chosen using a color contrast analyzer to meet accessibility standards (4:1 ratio), fostering a comforting visual experience.\nThe landing page is divided into two sections: For You, focusing on personal well-being, and To Whom You Care, supporting loved ones. Custom visuals and a logo were crafted using Canva and sourced from Pixabay, ensuring an uplifting and professional design. Privacy and security are integral, with Terms and Conditions, age restrictions (18+), and user authentication required to access features like posting. This front-end design combines aesthetics and functionality to create a safe and engaging user experience.\nSharing below the templates used inside the app:\n\nHome Page:\nThis is the landing page where users are first directed, featuring two main sections: For You (focused on personal well-being) and To Whom You Care (offering support for loved ones).\n\n\n\nSign In Page:\nWhen a new user clicks on “Explore,” they will be directed to the Sign-In page.\n\nRegistration Page:\nIf the user is new, they can select the “Register” option, which will take them to the registration page to create a username and password.\n\n\n\nCreate New Post Page:\nOnce you click on explore button either for you or to whom you care it will take you to share feelings page.\n\n\nThe “Share Feeling” feature leads to the recommendations section, supported by a backend framework that computes both the suicide score and the sentiment score, as detailed below."
+  },
+  {
+    "objectID": "soulguard.html#front-end-overview",
+    "href": "soulguard.html#front-end-overview",
+    "title": "How the App is Built",
+    "section": "",
+    "text": "The SoulGuard Django Project front-end is designed to support mental health by creating a positive and user-friendly interface. Inspired by the 988 website, it features a professional layout with carefully selected header and footer formatting. Colors were chosen using a color contrast analyzer to meet accessibility standards (4:1 ratio), fostering a comforting visual experience.\nThe landing page is divided into two sections: For You, focusing on personal well-being, and To Whom You Care, supporting loved ones. Custom visuals and a logo were crafted using Canva and sourced from Pixabay, ensuring an uplifting and professional design. Privacy and security are integral, with Terms and Conditions, age restrictions (18+), and user authentication required to access features like posting. This front-end design combines aesthetics and functionality to create a safe and engaging user experience.\nSharing below the templates used inside the app:\n\nHome Page:\nThis is the landing page where users are first directed, featuring two main sections: For You (focused on personal well-being) and To Whom You Care (offering support for loved ones).\n\n\n\nSign In Page:\nWhen a new user clicks on “Explore,” they will be directed to the Sign-In page.\n\nRegistration Page:\nIf the user is new, they can select the “Register” option, which will take them to the registration page to create a username and password.\n\n\n\nCreate New Post Page:\nOnce you click on explore button either for you or to whom you care it will take you to share feelings page.\n\n\nThe “Share Feeling” feature leads to the recommendations section, supported by a backend framework that computes both the suicide score and the sentiment score, as detailed below."
+  },
+  {
+    "objectID": "soulguard.html#back-end-models-overview",
+    "href": "soulguard.html#back-end-models-overview",
+    "title": "How the App is Built",
+    "section": "2. Back-End Models Overview",
+    "text": "2. Back-End Models Overview\nTo deliver accurate and insightful results, our backend leverages advanced machine learning models and natural language processing techniques. The workflow includes:\n\nSuicide Model :\n\nThe suicide detection model is designed with three BiLSTM layers, followed by a flattening layer to process the output. This is then passed through a series of dense layers before reaching the output layer.\n\n\nSentiment Model\n\nThe sentiment model is a hybrid approach combining TextBlob, VADER sentiment analysis, custom-defined words, and worry-related words derived from the NRC lexicon. The final sentiment score is calculated as a weighted average of these components."
+  },
+  {
+    "objectID": "soulguard.html#chatbot",
+    "href": "soulguard.html#chatbot",
+    "title": "How the App is Built",
+    "section": "3. Chatbot",
+    "text": "3. Chatbot\nThe chatbot is designed to provide users with quick and seamless virtual assistance, with the ultimate goal of facilitating a connection to a real agent, such as a therapist, when necessary.\nBuilt with customized intents, the chatbot leverages NLP techniques, including a Count Vectorizer and a Multinomial Naive Bayes classifier, to accurately identify user intents based on their queries. This enables the chatbot to address user questions effectively using predefined responses tailored to their needs."
+  }
+]
