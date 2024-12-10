@@ -1,6 +1,6 @@
-pytest==8.3.3
+pytest
 pylint
-black==24.8.0
+black
 ipython
 nbval
 pandas
